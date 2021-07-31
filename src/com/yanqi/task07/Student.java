@@ -1,45 +1,46 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖStudentÀàµÄ·â×°  ·â×°Àà
+    ç¼–ç¨‹å®ç°Studentç±»çš„å°è£…  å°è£…ç±»
  */
 public class Student {
-	
-	// 1.Ë½ÓĞ»¯³ÉÔ±±äÁ¿£¬Ê¹ÓÃprivate¹Ø¼ü×ÖĞŞÊÎ
-	// private¹Ø¼ü×ÖĞŞÊÎ±íÊ¾Ë½ÓĞµÄº¬Òå£¬Ò²¾ÍÊÇ¸Ã³ÉÔ±±äÁ¿Ö»ÄÜÔÚµ±Ç°ÀàµÄÄÚ²¿Ê¹ÓÃ
-	private int id;       // ÓÃÓÚÃèÊöÑ§ºÅµÄ³ÉÔ±±äÁ¿
-	private String name;  // ÓÃÓÚÃèÊöĞÕÃûµÄ³ÉÔ±±äÁ¿ 
-	
-	// 3.ÔÚ¹«ÓĞµÄ¹¹Ôì·½·¨ÖĞµ÷ÓÃset·½·¨½øĞĞºÏÀíÖµµÄÅĞ¶Ï
-	public Student() {}
-	public Student(int id, String name) {
-		//this.id = id;
-		//this.name = name;
-		setId(id);
-		setName(name);
-	}
-	
-	// 2.Ìá¹©¹«ÓĞµÄgetºÍset·½·¨£¬²¢ÔÚ·½·¨ÌåÖĞ½øĞĞºÏÀíÖµµÄÅĞ¶Ï
-	// Ê¹ÓÃpublic¹Ø¼ü×ÖĞŞÊÎ±íÊ¾¹«ÓĞµÄº¬Òå£¬Ò²¾ÍÊÇ¸Ã·½·¨¿ÉÒÔÔÚÈÎÒâÎ»ÖÃÊ¹ÓÃ
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		if(id > 0) {
-			this.id = id;
-		} else {
-			System.out.println("Ñ§ºÅ²»ºÏÀíÅ¶£¡£¡£¡");
-		}
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖÌØÕ÷µÄ´òÓ¡
-	// Ê²Ã´ĞŞÊÎ·û¶¼Ã»ÓĞ½Ğ×öÄ¬ÈÏµÄ·ÃÎÊÈ¨ÏŞ£¬¼¶±ğ½éÓÚprivateºÍpublicÖ®¼ä
-	public void show() {
-		//System.out.println("ÎÒÊÇ" + name + "£¬ÎÒµÄÑ§ºÅÊÇ" + id);
-		System.out.println("ÎÒÊÇ" + getName() + "£¬ÎÒµÄÑ§ºÅÊÇ" + getId());
-	}
+
+    // 1.ç§æœ‰åŒ–æˆå‘˜å˜é‡ï¼Œä½¿ç”¨privateå…³é”®å­—ä¿®é¥°
+    // privateå…³é”®å­—ä¿®é¥°è¡¨ç¤ºç§æœ‰çš„å«ä¹‰ï¼Œä¹Ÿå°±æ˜¯è¯¥æˆå‘˜å˜é‡åªèƒ½åœ¨å½“å‰ç±»çš„å†…éƒ¨ä½¿ç”¨
+    private int id;       // ç”¨äºæè¿°å­¦å·çš„æˆå‘˜å˜é‡
+    private String name;  // ç”¨äºæè¿°å§“åçš„æˆå‘˜å˜é‡
+
+    // 3.åœ¨å…¬æœ‰çš„æ„é€ æ–¹æ³•ä¸­è°ƒç”¨setæ–¹æ³•è¿›è¡Œåˆç†å€¼çš„åˆ¤æ–­
+    public Student() {}
+    public Student(int id, String name) {
+        //this.id = id;
+        //this.name = name;
+        setId(id);
+        setName(name);
+    }
+
+    // 2.æä¾›å…¬æœ‰çš„getå’Œsetæ–¹æ³•ï¼Œå¹¶åœ¨æ–¹æ³•ä½“ä¸­è¿›è¡Œåˆç†å€¼çš„åˆ¤æ–­
+    // ä½¿ç”¨publicå…³é”®å­—ä¿®é¥°è¡¨ç¤ºå…¬æœ‰çš„å«ä¹‰ï¼Œä¹Ÿå°±æ˜¯è¯¥æ–¹æ³•å¯ä»¥åœ¨ä»»æ„ä½ç½®ä½¿ç”¨
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        if(id > 0) {
+            this.id = id;
+        } else {
+            System.out.println("å­¦å·ä¸åˆç†å“¦ï¼ï¼ï¼");
+        }
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°ç‰¹å¾çš„æ‰“å°
+    // ä»€ä¹ˆä¿®é¥°ç¬¦éƒ½æ²¡æœ‰å«åšé»˜è®¤çš„è®¿é—®æƒé™ï¼Œçº§åˆ«ä»‹äºprivateå’Œpublicä¹‹é—´
+    public void show() {
+        //System.out.println("æˆ‘æ˜¯" + name + "ï¼Œæˆ‘çš„å­¦å·æ˜¯" + id);
+        System.out.println("æˆ‘æ˜¯" + getName() + "ï¼Œæˆ‘çš„å­¦å·æ˜¯" + getId());
+    }
 }

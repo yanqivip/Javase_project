@@ -1,40 +1,41 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊµÏÖÂß¼­ÔËËã·ûµÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°é€»è¾‘è¿ç®—ç¬¦çš„ä½¿ç”¨
  */
 public class LogicTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷Á½¸öbooleanÀàĞÍµÄ±äÁ¿²¢³õÊ¼»¯
-		boolean b1 = true;
-		boolean b2 = false;
-		// 2.´òÓ¡±äÁ¿µÄÊıÖµ
-		System.out.println("b1 = " + b1); // b1 = true
-		System.out.println("b2 = " + b2); // b2 = false
-		
-		System.out.println("---------------------------------------------");
-		// 3.Ê¹ÓÃÉÏÊö±äÁ¿ÊµÏÖÂß¼­ÔËËã·ûµÄÊ¹ÓÃ
-		boolean b3 = b1 && b2;
-		System.out.println("b3 = " + b3); // false
-		System.out.println(b1 && b2); // false   ²¢ÇÒ
-		System.out.println(b1 || b2); // true    »òÕß
-		System.out.println(!b1);  // false       È¡·´
-		System.out.println(!b2);  // true
-		
-		System.out.println("---------------------------------------------");
-		// 4.²âÊÔÒ»ÏÂ¶ÌÂ·ÌØĞÔ
-		int ia = 3;
-		int ib = 5;
-		// ¶ÔÓÚÂß¼­ÓëÔËËã·ûÀ´Ëµ£¬ÈôµÚÒ»¸öÌõ¼şÎª¼ÙÔòÕû¸ö±í´ïÊ½Îª¼Ù£¬´ËÊ±Ìø¹ıµÚ¶ş¸ö±í´ïÊ½²»Ö´ĞĞ
-		boolean b4 = (++ia == 3) && (++ib == 5);
-		System.out.println("b4 = " + b4); // false
-		System.out.println("ia = " + ia); // 4
-		System.out.println("ib = " + ib); // 5
-		
-		// ¶ÔÓÚÂß¼­»òÔËËã·ûÀ´Ëµ£¬ÈôµÚÒ»¸öÌõ¼şÎªÕæÔòÕû¸ö±í´ïÊ½ÎªÕæ£¬´ËÊ±Ìø¹ıµÚ¶ş¸ö±í´ïÊ½²»Ö´ĞĞ
-		boolean b5 = (++ia == 5) || (++ib == 5);
-		System.out.println("b5 = " + b5); // true
-		System.out.println("ia = " + ia); // 5
-		System.out.println("ib = " + ib); // 5
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸¤ä¸ªbooleanç±»å‹çš„å˜é‡å¹¶åˆå§‹åŒ–
+        boolean b1 = true;
+        boolean b2 = false;
+        // 2.æ‰“å°å˜é‡çš„æ•°å€¼
+        System.out.println("b1 = " + b1); // b1 = true
+        System.out.println("b2 = " + b2); // b2 = false
+
+        System.out.println("---------------------------------------------");
+        // 3.ä½¿ç”¨ä¸Šè¿°å˜é‡å®ç°é€»è¾‘è¿ç®—ç¬¦çš„ä½¿ç”¨
+        boolean b3 = b1 && b2;
+        System.out.println("b3 = " + b3); // false
+        System.out.println(b1 && b2); // false   å¹¶ä¸”
+        System.out.println(b1 || b2); // true    æˆ–è€…
+        System.out.println(!b1);  // false       å–å
+        System.out.println(!b2);  // true
+
+        System.out.println("---------------------------------------------");
+        // 4.æµ‹è¯•ä¸€ä¸‹çŸ­è·¯ç‰¹æ€§
+        int ia = 3;
+        int ib = 5;
+        // å¯¹äºé€»è¾‘ä¸è¿ç®—ç¬¦æ¥è¯´ï¼Œè‹¥ç¬¬ä¸€ä¸ªæ¡ä»¶ä¸ºå‡åˆ™æ•´ä¸ªè¡¨è¾¾å¼ä¸ºå‡ï¼Œæ­¤æ—¶è·³è¿‡ç¬¬äºŒä¸ªè¡¨è¾¾å¼ä¸æ‰§è¡Œ
+        boolean b4 = (++ia == 3) && (++ib == 5);
+        System.out.println("b4 = " + b4); // false
+        System.out.println("ia = " + ia); // 4
+        System.out.println("ib = " + ib); // 5
+
+        // å¯¹äºé€»è¾‘æˆ–è¿ç®—ç¬¦æ¥è¯´ï¼Œè‹¥ç¬¬ä¸€ä¸ªæ¡ä»¶ä¸ºçœŸåˆ™æ•´ä¸ªè¡¨è¾¾å¼ä¸ºçœŸï¼Œæ­¤æ—¶è·³è¿‡ç¬¬äºŒä¸ªè¡¨è¾¾å¼ä¸æ‰§è¡Œ
+        boolean b5 = (++ia == 5) || (++ib == 5);
+        System.out.println("b5 = " + b5); // true
+        System.out.println("ia = " + ia); // 5
+        System.out.println("ib = " + ib); // 5
+    }
 }

@@ -1,16 +1,17 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊµÏÖforÑ­»·µÄÊ¹ÓÃ£¬Ä£ÄâÍæÓÎÏ·µÄ¹ı³Ì
+    ç¼–ç¨‹å®ç°forå¾ªç¯çš„ä½¿ç”¨ï¼Œæ¨¡æ‹Ÿç©æ¸¸æˆçš„è¿‡ç¨‹
  */
 public class ForTest {
-	
-	public static void main(String[] args) throws Exception {
-		
-		for(int i = 1; i <= 10; i++) { // i = i + 1  => i += 1  => i++
-			System.out.println("½ñÍí³Ô¼¦£¬´ó¼ª´óÀû£¬ÕıÔÚ½øĞĞµÚ" + i + "³¡ÓÎÏ·...");
-			Thread.sleep(5000); // ±íÊ¾Ä£ÄâË¯Ãß5ÃëµÄĞ§¹û
-			System.out.println("±¾³¡ÓÎÏ·½áÊø£¡\n\n\n");
-		}
-		
-		System.out.println("¸ÃĞİÏ¢ÁË£¬·ñÔòÃ÷ÌìÔçÉÏ¾ÍÒª³Ùµ½ÁË£¡");
-	}
+
+    public static void main(String[] args) throws Exception {
+
+        for(int i = 1; i <= 10; i++) { // i = i + 1  => i += 1  => i++
+            System.out.println("ä»Šæ™šåƒé¸¡ï¼Œå¤§å‰å¤§åˆ©ï¼Œæ­£åœ¨è¿›è¡Œç¬¬" + i + "åœºæ¸¸æˆ...");
+            Thread.sleep(5000); // è¡¨ç¤ºæ¨¡æ‹Ÿç¡çœ 5ç§’çš„æ•ˆæœ
+            System.out.println("æœ¬åœºæ¸¸æˆç»“æŸï¼\n\n\n");
+        }
+
+        System.out.println("è¯¥ä¼‘æ¯äº†ï¼Œå¦åˆ™æ˜å¤©æ—©ä¸Šå°±è¦è¿Ÿåˆ°äº†ï¼");
+    }
 }

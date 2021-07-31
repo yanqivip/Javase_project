@@ -1,28 +1,26 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖthis¹Ø¼ü×ÖµÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°thiså…³é”®å­—çš„ä½¿ç”¨
  */
 public class ThisTest {
-	
-	// ×Ô¶¨Òå¹¹Ôì·½·¨
-	ThisTest() {
-		// this´ú±íµ±Ç°ÕıÔÚ¹¹ÔìµÄ¶ÔÏó
-		System.out.println("¹¹Ôì·½·¨ÖĞ£ºthis = " + this);
-	}
-	// ×Ô¶¨Òå³ÉÔ±·½·¨
-	void show() {
-		// this´ú±íµ±Ç°ÕıÔÚµ÷ÓÃµÄ¶ÔÏó
-		System.out.println("³ÉÔ±·½·¨ÖĞ£ºthis = " + this);
-	}
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷ThisTestÀàĞÍµÄÒıÓÃÖ¸Ïò¸ÃÀàĞÍµÄ¶ÔÏó
-		ThisTest tt = new ThisTest();
-		// 2.µ÷ÓÃshow·½·¨
-		tt.show();
-		System.out.println("main·½·¨ÖĞ£ºtt = " + tt);
-		
-		
-		
-	}
+
+    // è‡ªå®šä¹‰æ„é€ æ–¹æ³•
+    ThisTest() {
+        // thisä»£è¡¨å½“å‰æ­£åœ¨æ„é€ çš„å¯¹è±¡
+        System.out.println("æ„é€ æ–¹æ³•ä¸­ï¼šthis = " + this);
+    }
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•
+    void show() {
+        // thisä»£è¡¨å½“å‰æ­£åœ¨è°ƒç”¨çš„å¯¹è±¡
+        System.out.println("æˆå‘˜æ–¹æ³•ä¸­ï¼šthis = " + this);
+    }
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ThisTestç±»å‹çš„å¼•ç”¨æŒ‡å‘è¯¥ç±»å‹çš„å¯¹è±¡
+        ThisTest tt = new ThisTest();
+        // 2.è°ƒç”¨showæ–¹æ³•
+        tt.show();
+        System.out.println("mainæ–¹æ³•ä¸­ï¼štt = " + tt);
+    }
 }

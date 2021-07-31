@@ -1,79 +1,80 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖPersonÀàµÄ¶¨Òå
+    ç¼–ç¨‹å®ç°Personç±»çš„å®šä¹‰
  */
 public class Person {
-	
-	String name; // ÓÃÓÚÃèÊöĞÕÃûµÄ³ÉÔ±±äÁ¿
-	int age;     // ÓÃÓÚÃèÊöÄêÁäµÄ³ÉÔ±±äÁ¿
-	
-	// ×Ô¶¨Òå¹¹Ôì·½·¨
-	// String s = "ÕÅ·É";
-	// int i = 30;
-	// String s = "¹ØÓğ";
-	// int i = 35;
-	// ¾Í½üÔ­Ôò  ÀÁÈËÔ­Ôò  
-	Person(String name, int age) {
-		//System.out.println("ÎÒ¾ÍÊÇ×Ô¶¨ÒåµÄ¹¹Ôì·½·¨£¡");
-		//name = "ÕÅ·É";
-		//age = 30;
-		this.name = name;
-		this.age = age;
-	}
-	// ×Ô¶¨ÒåÎŞ²Î¹¹Ôì·½·¨
-	Person() {
-	}
-	
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖËùÓĞÌØÕ÷µÄ´òÓ¡  Òşº¬×Åthis¹Ø¼ü×Ö,this¹Ø¼ü×Ö´ú±íµ±Ç°ÕıÔÚµ÷ÓÃµÄ¶ÔÏó
-	// Person this = p1;   this.name = p1.name = ÕÅ·É
-	// Person this = p2;   this.name = p2.name = ¹ØÓğ
-	void show() {
-		// Ã¿µ±´òÓ¡³ÉÔ±±äÁ¿µÄÊıÖµÊ±£¬ÈÃÄêÁäÔö³¤Ò»Ëê
-		//this.grow();
-		//grow();
-		//System.out.println("ÎÒÊÇ" + this.name + "£¬½ñÄê" + this.age + "ËêÁË£¡");
-		System.out.println("ÎÒÊÇ" + name + "£¬½ñÄê" + age + "ËêÁË£¡");
-	}
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖÄêÁäÔö³¤Ò»ËêµÄĞĞÎª
-	void grow() {
-		age++;
-	}
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖÄêÁäÔö³¤²ÎÊıÖ¸¶¨ÊıÖµµÄĞĞÎª
-	void grow(int age) {
-		this.age += age;
-	}
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖPersonÀàĞÍ¶ÔÏóµÄ»ñÈ¡²¢·µ»ØµÄĞĞÎª
-	//String getName(){}
-	Person getPerson() {
-		// ·µ»Øµ±Ç°µ÷ÓÃ¶ÔÏó±¾Éí  Person tp = new Person();  return tp;
-		return this;
-	} 
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷Ò»¸öPersonÀàĞÍµÄÒıÓÃÖ¸ÏòPersonÀàĞÍµÄ¶ÔÏó
-		// µ±ÀàÖĞÃ»ÓĞÌá¹©¹¹Ôì·½·¨Ê±£¬ÔòÏÂÃæµ÷ÓÃÄ¬ÈÏ¹¹Ôì·½·¨£¬ÈôÀàÖĞÌá¹©¹¹Ôì·½·¨ºó£¬ÔòÏÂÃæµ÷ÓÃÀàÖĞÌá¹©µÄ°æ±¾
-		Person p1 = new Person("ÕÅ·É", 30);
-		// ²¢´òÓ¡ÌØÕ÷
-		p1.show();  // null 0  ÕÅ·É  30
-		
-		Person p2 = new Person("¹ØÓğ", 35);
-		p2.show();  // ¹ØÓğ 35
-		
-		Person p3 = new Person();
-		p3.show(); // null 0
-		
-		System.out.println("----------------------------------------------------");
-		// 2.ÊµÏÖÖØÔØ·½·¨µÄµ÷ÓÃºÍ²âÊÔ
-		p1.grow();
-		p1.show(); // ÕÅ·É 31
-		p1.grow(3);
-		p1.show(); // ÕÅ·É 34
-		
-		System.out.println("----------------------------------------------------");
-		// 3.µ÷ÓÃ³ÉÔ±·½·¨»ñÈ¡¶ÔÏó
-		Person p4 = p1.getPerson();
-		System.out.println("p1 = " + p1);
-		System.out.println("p4 = " + p4);
-		
-	}
+
+    String name; // ç”¨äºæè¿°å§“åçš„æˆå‘˜å˜é‡
+    int age;     // ç”¨äºæè¿°å¹´é¾„çš„æˆå‘˜å˜é‡
+
+    // è‡ªå®šä¹‰æ„é€ æ–¹æ³•
+    // String s = "å¼ é£";
+    // int i = 30;
+    // String s = "å…³ç¾½";
+    // int i = 35;
+    // å°±è¿‘åŸåˆ™  æ‡’äººåŸåˆ™
+    Person(String name, int age) {
+        //System.out.println("æˆ‘å°±æ˜¯è‡ªå®šä¹‰çš„æ„é€ æ–¹æ³•ï¼");
+        //name = "å¼ é£";
+        //age = 30;
+        this.name = name;
+        this.age = age;
+    }
+    // è‡ªå®šä¹‰æ— å‚æ„é€ æ–¹æ³•
+    Person() {
+    }
+
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°æ‰€æœ‰ç‰¹å¾çš„æ‰“å°  éšå«ç€thiså…³é”®å­—,thiså…³é”®å­—ä»£è¡¨å½“å‰æ­£åœ¨è°ƒç”¨çš„å¯¹è±¡
+    // Person this = p1;   this.name = p1.name = å¼ é£
+    // Person this = p2;   this.name = p2.name = å…³ç¾½
+    void show() {
+        // æ¯å½“æ‰“å°æˆå‘˜å˜é‡çš„æ•°å€¼æ—¶ï¼Œè®©å¹´é¾„å¢é•¿ä¸€å²
+        //this.grow();
+        //grow();
+        //System.out.println("æˆ‘æ˜¯" + this.name + "ï¼Œä»Šå¹´" + this.age + "å²äº†ï¼");
+        System.out.println("æˆ‘æ˜¯" + name + "ï¼Œä»Šå¹´" + age + "å²äº†ï¼");
+    }
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°å¹´é¾„å¢é•¿ä¸€å²çš„è¡Œä¸º
+    void grow() {
+        age++;
+    }
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°å¹´é¾„å¢é•¿å‚æ•°æŒ‡å®šæ•°å€¼çš„è¡Œä¸º
+    void grow(int age) {
+        this.age += age;
+    }
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°Personç±»å‹å¯¹è±¡çš„è·å–å¹¶è¿”å›çš„è¡Œä¸º
+    //String getName(){}
+    Person getPerson() {
+        // è¿”å›å½“å‰è°ƒç”¨å¯¹è±¡æœ¬èº«  Person tp = new Person();  return tp;
+        return this;
+    }
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸€ä¸ªPersonç±»å‹çš„å¼•ç”¨æŒ‡å‘Personç±»å‹çš„å¯¹è±¡
+        // å½“ç±»ä¸­æ²¡æœ‰æä¾›æ„é€ æ–¹æ³•æ—¶ï¼Œåˆ™ä¸‹é¢è°ƒç”¨é»˜è®¤æ„é€ æ–¹æ³•ï¼Œè‹¥ç±»ä¸­æä¾›æ„é€ æ–¹æ³•åï¼Œåˆ™ä¸‹é¢è°ƒç”¨ç±»ä¸­æä¾›çš„ç‰ˆæœ¬
+        Person p1 = new Person("å¼ é£", 30);
+        // å¹¶æ‰“å°ç‰¹å¾
+        p1.show();  // null 0  å¼ é£  30
+
+        Person p2 = new Person("å…³ç¾½", 35);
+        p2.show();  // å…³ç¾½ 35
+
+        Person p3 = new Person();
+        p3.show(); // null 0
+
+        System.out.println("----------------------------------------------------");
+        // 2.å®ç°é‡è½½æ–¹æ³•çš„è°ƒç”¨å’Œæµ‹è¯•
+        p1.grow();
+        p1.show(); // å¼ é£ 31
+        p1.grow(3);
+        p1.show(); // å¼ é£ 34
+
+        System.out.println("----------------------------------------------------");
+        // 3.è°ƒç”¨æˆå‘˜æ–¹æ³•è·å–å¯¹è±¡
+        Person p4 = p1.getPerson();
+        System.out.println("p1 = " + p1);
+        System.out.println("p4 = " + p4);
+
+    }
 }

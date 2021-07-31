@@ -1,24 +1,25 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃforÑ­»·ÊµÏÖ1 ~ 10000Ö®¼äËùÓĞÕûÊıµÄÀÛ¼ÓºÍ
+    ç¼–ç¨‹ä½¿ç”¨forå¾ªç¯å®ç°1 ~ 10000ä¹‹é—´æ‰€æœ‰æ•´æ•°çš„ç´¯åŠ å’Œ
  */
 public class ForSumTest {
-	
-	public static void main(String[] args) {
-		
-		// 2.ÉùÃ÷Ò»¸ö±äÁ¿¸ºÔğ¼ÇÂ¼ÀÛ¼ÓµÄ½á¹û
-		int sum = 0;
-		
-		// 1.Ê¹ÓÃforÑ­»·´òÓ¡1 ~ 10000Ö®¼äµÄËùÓĞÕûÊı
-		for(int i = 1; i <= 10000; i++) {
-			// ´òÓ¡ºó²»»»ĞĞ
-			//System.out.print(i + " ");
-			// ½«ËùÓĞiµÄÈ¡Öµ¶¼ÀÛ¼Óµ½±äÁ¿sumÖĞ
-			sum += i; // sum = sum + i;
-		}
-		// ×¨ÃÅÓÃÓÚ»»ĞĞ
-		//System.out.println();
-		
-		// 3.´òÓ¡×îÖÕµÄÀÛ¼Ó½á¹û
-		System.out.println("sum = " + sum);
-	}
+
+    public static void main(String[] args) {
+
+        // 2.å£°æ˜ä¸€ä¸ªå˜é‡è´Ÿè´£è®°å½•ç´¯åŠ çš„ç»“æœ
+        int sum = 0;
+
+        // 1.ä½¿ç”¨forå¾ªç¯æ‰“å°1 ~ 10000ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        for(int i = 1; i <= 10000; i++) {
+            // æ‰“å°åä¸æ¢è¡Œ
+            //System.out.print(i + " ");
+            // å°†æ‰€æœ‰içš„å–å€¼éƒ½ç´¯åŠ åˆ°å˜é‡sumä¸­
+            sum += i; // sum = sum + i;
+        }
+        // ä¸“é—¨ç”¨äºæ¢è¡Œ
+        //System.out.println();
+
+        // 3.æ‰“å°æœ€ç»ˆçš„ç´¯åŠ ç»“æœ
+        System.out.println("sum = " + sum);
+    }
 }

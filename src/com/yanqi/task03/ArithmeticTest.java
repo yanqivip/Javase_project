@@ -1,49 +1,50 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊµÏÖËãÊõÔËËã·ûµÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°ç®—æœ¯è¿ç®—ç¬¦çš„ä½¿ç”¨
  */
 public class ArithmeticTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷Á½¸öintÀàĞÍµÄ±äÁ¿²¢³õÊ¼»¯
-		//int ia = 6, ib = 2;       // ±íÊ¾ÉùÃ÷Á½¸öintÀàĞÍµÄ±äÁ¿iaºÍib£¬²»ÍÆ¼öÊ¹ÓÃ
-		int ia = 6;                 // ÍÆ¼ö¸Ã·½Ê½£¬Ìá¸ßÁË´úÂëµÄ¿É¶ÁĞÔ
-		int ib = 2;
-		System.out.println("ia = " + ia); // ia = 6
-		System.out.println("ib = " + ib); // ib = 2
-		
-		System.out.println("----------------------------------------");
-		// 2.Ê¹ÓÃÉÏÊö±äÁ¿ÊµÏÖËãÊõÔËËã·ûµÄÊ¹ÓÃ   +  -  *  /  %
-		// ±íÊ¾ÉùÃ÷±äÁ¿icÀ´¼ÇÂ¼iaÓëibµÄºÍ
-		int ic = ia + ib;
-		System.out.println("ic = " + ic); // ic = 8
-		// ÆäÖĞia+ibÕâ¸öÕûÌå½Ğ×ö±í´ïÊ½  ia¡¢ib½Ğ×ö²Ù×÷Êı   +½Ğ×ö²Ù×÷·û/ÔËËã·û
-		System.out.println(ia + ib);  // 8
-		System.out.println(ia - ib);  // 4
-		System.out.println(ia * ib);  // 12
-		System.out.println(ia / ib);  // 3
-		System.out.println(ia % ib);  // 0
-		
-		System.out.println("----------------------------------------");
-		// 3.×¢ÒâÊÂÏî
-		// 3.1 µ±Á½¸öÕûÊıÏà³ıÊ±½á¹ûÖ»±£ÁôÕûÊı²¿·Ö£¬¶ªÆúĞ¡Êı²¿·Ö
-		System.out.println(5 / 2); // 2
-		
-		System.out.println("----------------------------------------");
-		// 3.2 ÈôÏ£Íû±£ÁôĞ¡Êı²¿·Ö¸ÃÈçºÎ´¦Àí£¿
-		// ´¦Àí·½Ê½Ò»£ºÊ¹ÓÃÇ¿ÖÆÀàĞÍ×ª»»½«ÆäÖĞÒ»¸ö²Ù×÷Êı×ª»»ÎªdoubleÀàĞÍÔÙÔËËã¼´¿É
-		System.out.println((double)5 / 2);   // 2.5
-		System.out.println(5 / (double)2);   // 2.5
-		System.out.println((double)5 / (double)2); // 2.5
-		System.out.println((double)(5 / 2)); // 2.0
-		// ´¦Àí·½Ê½¶ş£ºÈÃÆäÖĞÒ»¸ö²Ù×÷Êı³ËÒÔ1.0¼´¿É£¨ÍÆ¼ö£©
-		System.out.println(5*1.0 / 2); // 2.5
-		System.out.println(5.0 / 2);   // 2.5   ia.0 ´íÎóµÄ±íÊ¾
-		
-		System.out.println("----------------------------------------");
-		// 3.3 0²»ÄÜ×÷³ıÊı
-		//System.out.println(5 / 0); // ±àÒëok£¬ÔËĞĞ·¢Éújava.lang.ArithmeticException(ËãÊõÒì³£ ¼Ç×¡): / by zero
-		System.out.println(5 / 0.0); // Infinity ÎŞÇî
- 		System.out.println(0 / 0.0); // NaN Not a Number 
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸¤ä¸ªintç±»å‹çš„å˜é‡å¹¶åˆå§‹åŒ–
+        //int ia = 6, ib = 2;       // è¡¨ç¤ºå£°æ˜ä¸¤ä¸ªintç±»å‹çš„å˜é‡iaå’Œibï¼Œä¸æ¨èä½¿ç”¨
+        int ia = 6;                 // æ¨èè¯¥æ–¹å¼ï¼Œæé«˜äº†ä»£ç çš„å¯è¯»æ€§
+        int ib = 2;
+        System.out.println("ia = " + ia); // ia = 6
+        System.out.println("ib = " + ib); // ib = 2
+
+        System.out.println("----------------------------------------");
+        // 2.ä½¿ç”¨ä¸Šè¿°å˜é‡å®ç°ç®—æœ¯è¿ç®—ç¬¦çš„ä½¿ç”¨   +  -  *  /  %
+        // è¡¨ç¤ºå£°æ˜å˜é‡icæ¥è®°å½•iaä¸ibçš„å’Œ
+        int ic = ia + ib;
+        System.out.println("ic = " + ic); // ic = 8
+        // å…¶ä¸­ia+ibè¿™ä¸ªæ•´ä½“å«åšè¡¨è¾¾å¼  iaã€ibå«åšæ“ä½œæ•°   +å«åšæ“ä½œç¬¦/è¿ç®—ç¬¦
+        System.out.println(ia + ib);  // 8
+        System.out.println(ia - ib);  // 4
+        System.out.println(ia * ib);  // 12
+        System.out.println(ia / ib);  // 3
+        System.out.println(ia % ib);  // 0
+
+        System.out.println("----------------------------------------");
+        // 3.æ³¨æ„äº‹é¡¹
+        // 3.1 å½“ä¸¤ä¸ªæ•´æ•°ç›¸é™¤æ—¶ç»“æœåªä¿ç•™æ•´æ•°éƒ¨åˆ†ï¼Œä¸¢å¼ƒå°æ•°éƒ¨åˆ†
+        System.out.println(5 / 2); // 2
+
+        System.out.println("----------------------------------------");
+        // 3.2 è‹¥å¸Œæœ›ä¿ç•™å°æ•°éƒ¨åˆ†è¯¥å¦‚ä½•å¤„ç†ï¼Ÿ
+        // å¤„ç†æ–¹å¼ä¸€ï¼šä½¿ç”¨å¼ºåˆ¶ç±»å‹è½¬æ¢å°†å…¶ä¸­ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºdoubleç±»å‹å†è¿ç®—å³å¯
+        System.out.println((double)5 / 2);   // 2.5
+        System.out.println(5 / (double)2);   // 2.5
+        System.out.println((double)5 / (double)2); // 2.5
+        System.out.println((double)(5 / 2)); // 2.0
+        // å¤„ç†æ–¹å¼äºŒï¼šè®©å…¶ä¸­ä¸€ä¸ªæ“ä½œæ•°ä¹˜ä»¥1.0å³å¯ï¼ˆæ¨èï¼‰
+        System.out.println(5*1.0 / 2); // 2.5
+        System.out.println(5.0 / 2);   // 2.5   ia.0 é”™è¯¯çš„è¡¨ç¤º
+
+        System.out.println("----------------------------------------");
+        // 3.3 0ä¸èƒ½ä½œé™¤æ•°
+        //System.out.println(5 / 0); // ç¼–è¯‘okï¼Œè¿è¡Œå‘ç”Ÿjava.lang.ArithmeticException(ç®—æœ¯å¼‚å¸¸ è®°ä½): / by zero
+        System.out.println(5 / 0.0); // Infinity æ— ç©·
+        System.out.println(0 / 0.0); // NaN Not a Number
+    }
 }

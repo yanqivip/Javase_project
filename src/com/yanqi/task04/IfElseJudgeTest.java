@@ -1,29 +1,30 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃif else·ÖÖ§½á¹¹ÅĞ¶ÏÊÇ·ñÎª¸ºÊıºÍ·Ç¸ºÊı
+    ç¼–ç¨‹ä½¿ç”¨if elseåˆ†æ”¯ç»“æ„åˆ¤æ–­æ˜¯å¦ä¸ºè´Ÿæ•°å’Œéè´Ÿæ•°
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfElseJudgeTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒ»¸öÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		// 2.Ê¹ÓÃif else·ÖÖ§½á¹¹ÅĞ¶Ï¸ºÊıºÍ·Ç¸ºÊı²¢´òÓ¡
-		if(num < 0) {
-			System.out.println(num + "ÊÇ¸ºÊı£¡");
-		} else {
-			//System.out.println(num + "ÊÇ·Ç¸ºÊı£¡");
-			// Õë¶ÔÄ¿Ç°µÄ·Ç¸ºÊıÔÙ´ÎÅĞ¶ÏÊÇÕıÊı»¹ÊÇÁã
-			if(num > 0) {
-				System.out.println(num + "ÊÇÕıÊı!");
-			} else {
-				System.out.println(num + "ÊÇÁã£¡");
-			}
-		}
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸€ä¸ªæ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // 2.ä½¿ç”¨if elseåˆ†æ”¯ç»“æ„åˆ¤æ–­è´Ÿæ•°å’Œéè´Ÿæ•°å¹¶æ‰“å°
+        if(num < 0) {
+            System.out.println(num + "æ˜¯è´Ÿæ•°ï¼");
+        } else {
+            //System.out.println(num + "æ˜¯éè´Ÿæ•°ï¼");
+            // é’ˆå¯¹ç›®å‰çš„éè´Ÿæ•°å†æ¬¡åˆ¤æ–­æ˜¯æ­£æ•°è¿˜æ˜¯é›¶
+            if(num > 0) {
+                System.out.println(num + "æ˜¯æ­£æ•°!");
+            } else {
+                System.out.println(num + "æ˜¯é›¶ï¼");
+            }
+        }
+    }
 }

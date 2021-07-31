@@ -1,28 +1,29 @@
+package com.yanqi.task02;
 /*
-    ±à³ÌÊµÏÖ±äÁ¿µÄÉùÃ÷ºÍÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°å˜é‡çš„å£°æ˜å’Œä½¿ç”¨
  */
 public class VarTest {
-	
-	public static void main(String[] args) {
-	
-		// 1.ÉùÃ÷Ò»¸ö±äÁ¿²¢³õÊ¼»¯   Êı¾İÀàĞÍ ±äÁ¿Ãû = ³õÊ¼Öµ;
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸€ä¸ªå˜é‡å¹¶åˆå§‹åŒ–   æ•°æ®ç±»å‹ å˜é‡å = åˆå§‹å€¼;
         int age = 18;
-		// 2.´òÓ¡±äÁ¿µÄÊıÖµ   + ×Ö·û´®Á¬½Ó·û  ÓÃÓÚ½«Á½±ßµÄÄÚÈİÆ´½Ó/Á¬½ÓÆğÀ´½á¹û»¹ÊÇ×Ö·û´®
-		System.out.println("age = " + age); // age = 18
-		
-		System.out.println("-----------------------------------------------------");
-		// 3.Ê¹ÓÃ±äÁ¿µÄ×¢ÒâÊÂÏî
-		// 3.1 Ê¹ÓÃ±äÁ¿Ö®Ç°ĞèÒªÉùÃ÷
-		// System.out.println("name = " + name); // ´íÎó: ÕÒ²»µ½·ûºÅ 
-		// 3.2 Ê¹ÓÃ±äÁ¿Ö®Ç°ĞèÒª³õÊ¼»¯
-		//String name;
-		//System.out.println("name = " + name); // ´íÎó: ¿ÉÄÜÉĞÎ´³õÊ¼»¯±äÁ¿name
-		String name = "ÑÕì÷";
-		System.out.println("name = " + name); // name = ÑÕì÷
-		// 3.3 ±äÁ¿²»ÄÜÖØ¸´ÉùÃ÷
-		//int age = 17; // ´íÎó: ÒÑÔÚ·½·¨ main(String[])ÖĞ¶¨Òå/ÉùÃ÷ÁË±äÁ¿ age
-		int aGe = 17;
-		int fjakjf3fjdlakjfa7987jfkdajlkf2427897fdjafjalkl89809fdjafjlj = 10;
-		int ÄêÁä = 16;
-	}
-} 
+        // 2.æ‰“å°å˜é‡çš„æ•°å€¼   + å­—ç¬¦ä¸²è¿æ¥ç¬¦  ç”¨äºå°†ä¸¤è¾¹çš„å†…å®¹æ‹¼æ¥/è¿æ¥èµ·æ¥ç»“æœè¿˜æ˜¯å­—ç¬¦ä¸²
+        System.out.println("age = " + age); // age = 18
+
+        System.out.println("-----------------------------------------------------");
+        // 3.ä½¿ç”¨å˜é‡çš„æ³¨æ„äº‹é¡¹
+        // 3.1 ä½¿ç”¨å˜é‡ä¹‹å‰éœ€è¦å£°æ˜
+        // System.out.println("name = " + name); // é”™è¯¯: æ‰¾ä¸åˆ°ç¬¦å·
+        // 3.2 ä½¿ç”¨å˜é‡ä¹‹å‰éœ€è¦åˆå§‹åŒ–
+        //String name;
+        //System.out.println("name = " + name); // é”™è¯¯: å¯èƒ½å°šæœªåˆå§‹åŒ–å˜é‡name
+        String name = "é¢œç¥º";
+        System.out.println("name = " + name); // name = é¢œç¥º
+        // 3.3 å˜é‡ä¸èƒ½é‡å¤å£°æ˜
+        //int age = 17; // é”™è¯¯: å·²åœ¨æ–¹æ³• main(String[])ä¸­å®šä¹‰/å£°æ˜äº†å˜é‡ age
+        int aGe = 17;
+        int fjakjf3fjdlakjfa7987jfkdajlkf2427897fdjafjalkl89809fdjafjlj = 10;
+        int å¹´é¾„ = 16;
+    }
+}

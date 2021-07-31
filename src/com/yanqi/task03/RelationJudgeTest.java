@@ -1,21 +1,22 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊ¹ÓÃ¹ØÏµÔËËã·ûÊµÏÖ¸ºÊıµÄÅĞ¶Ï
+    ç¼–ç¨‹ä½¿ç”¨å…³ç³»è¿ç®—ç¬¦å®ç°è´Ÿæ•°çš„åˆ¤æ–­
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class RelationJudgeTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒ»¸öÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		// 2.ÅĞ¶Ï¸ÃÕûÊıÊÇ·ñÎª¸ºÊı²¢´òÓ¡
-		boolean b1 = num < 0;
-		System.out.println("b1 = " + b1);
-		System.out.println(num < 0);
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸€ä¸ªæ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // 2.åˆ¤æ–­è¯¥æ•´æ•°æ˜¯å¦ä¸ºè´Ÿæ•°å¹¶æ‰“å°
+        boolean b1 = num < 0;
+        System.out.println("b1 = " + b1);
+        System.out.println(num < 0);
+    }
 }

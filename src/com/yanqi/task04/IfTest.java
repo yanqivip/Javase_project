@@ -1,24 +1,25 @@
+package com.yanqi.task04;
 /*
-     ±à³ÌÊ¹ÓÃif·ÖÖ§½á¹¹Ä£ÄâÍø°ÉÉÏÍøµÄ¹ı³Ì
+     ç¼–ç¨‹ä½¿ç”¨ifåˆ†æ”¯ç»“æ„æ¨¡æ‹Ÿç½‘å§ä¸Šç½‘çš„è¿‡ç¨‹
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÄêÁäĞÅÏ¢²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÄúµÄÄêÁä£º");
-		Scanner sc = new Scanner(System.in);
-		int age = sc.nextInt();
-		
-		// 2.Ê¹ÓÃif·ÖÖ§½á¹¹ÅĞ¶ÏÊÇ·ñ³ÉÄê²¢¸ø³ö¶ÔÓ¦µÄÌáÊ¾
-		if(age >= 18) {
-			System.out.println("¿ªĞÄµÄä¯ÀÀÆğÁËÍøÒ³...");
-		}
-		
-		// 3.´òÓ¡Ò»¾ä»°
-		System.out.println("ÃÀºÃµÄÊ±¹â×ÜÊÇ¶ÌÔİµÄ£¡");
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥å¹´é¾„ä¿¡æ¯å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥æ‚¨çš„å¹´é¾„ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+
+        // 2.ä½¿ç”¨ifåˆ†æ”¯ç»“æ„åˆ¤æ–­æ˜¯å¦æˆå¹´å¹¶ç»™å‡ºå¯¹åº”çš„æç¤º
+        if(age >= 18) {
+            System.out.println("å¼€å¿ƒçš„æµè§ˆèµ·äº†ç½‘é¡µ...");
+        }
+
+        // 3.æ‰“å°ä¸€å¥è¯
+        System.out.println("ç¾å¥½çš„æ—¶å…‰æ€»æ˜¯çŸ­æš‚çš„ï¼");
+    }
 }

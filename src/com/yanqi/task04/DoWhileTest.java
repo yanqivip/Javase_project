@@ -1,34 +1,35 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊµÏÖdo whileÑ­»·µÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°do whileå¾ªç¯çš„ä½¿ç”¨
  */
 public class DoWhileTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.Ê¹ÓÃforÑ­»·´òÓ¡1 ~ 10Ö®¼äµÄËùÓĞÕûÊı
-		// ÔÚ()»ò{}ÖĞÉùÃ÷µÄ±äÁ¿½Ğ×ö¿é±äÁ¿£¬×÷ÓÃ·¶Î§ÊÇ´ÓÉùÃ÷¿ªÊ¼Ò»Ö±µ½Óï¾ä¿é½áÊø
-		for(int i = 1; i <= 10; i++) {
-			System.out.println("i = " + i);
-		}
-		
-		System.out.println("-----------------------------");
-		// 2.Ê¹ÓÃwhileÑ­»·´òÓ¡1 ~ 10Ö®¼äµÄËùÓĞÕûÊı
-		//int i = 1;
-		int i = 11;
-		while(i <= 10) {
-			System.out.println("i = " + i);
-			i++;
-		}
-		
-		System.out.println("-----------------------------");
-		// Ê¹ÓÃdo whileÑ­»·´òÓ¡1 ~ 10Ö®¼äµÄËùÓĞÕûÊı
-		//i = 1;
-		i = 11;
-		do {
-			System.out.println("i = " + i);
-			i++;
-		} while(i <= 10);
-		
-		
-	}
+
+    public static void main(String[] args) {
+
+        // 1.ä½¿ç”¨forå¾ªç¯æ‰“å°1 ~ 10ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        // åœ¨()æˆ–{}ä¸­å£°æ˜çš„å˜é‡å«åšå—å˜é‡ï¼Œä½œç”¨èŒƒå›´æ˜¯ä»å£°æ˜å¼€å§‹ä¸€ç›´åˆ°è¯­å¥å—ç»“æŸ
+        for(int i = 1; i <= 10; i++) {
+            System.out.println("i = " + i);
+        }
+
+        System.out.println("-----------------------------");
+        // 2.ä½¿ç”¨whileå¾ªç¯æ‰“å°1 ~ 10ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        //int i = 1;
+        int i = 11;
+        while(i <= 10) {
+            System.out.println("i = " + i);
+            i++;
+        }
+
+        System.out.println("-----------------------------");
+        // ä½¿ç”¨do whileå¾ªç¯æ‰“å°1 ~ 10ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        //i = 1;
+        i = 11;
+        do {
+            System.out.println("i = " + i);
+            i++;
+        } while(i <= 10);
+
+
+    }
 }

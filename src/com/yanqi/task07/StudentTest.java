@@ -1,22 +1,23 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖStudentÀàµÄ²âÊÔ
+    ç¼–ç¨‹å®ç°Studentç±»çš„æµ‹è¯•
  */
 public class StudentTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷StudentÀàĞÍµÄÒıÓÃÖ¸ÏòStudentÀàĞÍµÄ¶ÔÏó
-		Student s1 = new Student();
-		// 2.¶Ô³ÉÔ±±äÁ¿½øĞĞ¸³Öµ²¢´òÓ¡
-		//s1.id = -1001;
-		//s1.name = "ÕÅ·É";
-		s1.setId(-1001);
-		s1.setName("ÕÅ·É");
-		s1.show(); // 1001 ÕÅ·É
-		
-		System.out.println("----------------------------------------------------");
-		// 3.Ê¹ÓÃÓĞ²Î·½Ê½¹¹Ôì¶ÔÏó²¢´òÓ¡ÌØÕ÷
-		Student s2 = new Student(-1001, "ÕÅ·É");
-		s2.show(); 
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜Studentç±»å‹çš„å¼•ç”¨æŒ‡å‘Studentç±»å‹çš„å¯¹è±¡
+        Student s1 = new Student();
+        // 2.å¯¹æˆå‘˜å˜é‡è¿›è¡Œèµ‹å€¼å¹¶æ‰“å°
+        //s1.id = -1001;
+        //s1.name = "å¼ é£";
+        s1.setId(-1001);
+        s1.setName("å¼ é£");
+        s1.show(); // 1001 å¼ é£
+
+        System.out.println("----------------------------------------------------");
+        // 3.ä½¿ç”¨æœ‰å‚æ–¹å¼æ„é€ å¯¹è±¡å¹¶æ‰“å°ç‰¹å¾
+        Student s2 = new Student(-1001, "å¼ é£");
+        s2.show();
+    }
 }

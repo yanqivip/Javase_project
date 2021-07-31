@@ -1,33 +1,34 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃdo whileÑ­»·À´Ä£ÄâÑ§Ï°Ğ§¹ûµÄ¼ì²é
+    ç¼–ç¨‹ä½¿ç”¨do whileå¾ªç¯æ¥æ¨¡æ‹Ÿå­¦ä¹ æ•ˆæœçš„æ£€æŸ¥
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class DoWhileCheckTest {
-	
-	public static void main(String[] args) throws Exception {
-		
-		String msg = null;  // ¿Õ 
- 		do {
-			System.out.println("ÕıÔÚ·è¿ñÑ§Ï°ÖĞ...");
-			Thread.sleep(5000); // Ä£Äâ5ÃëÖÓ
-			System.out.println("ÊÇ·ñºÏ¸ñ£¿£¨y/n£©");
-			Scanner sc = new Scanner(System.in);
-			msg = sc.next();
-		} while(!"y".equals(msg));
-		
-		System.out.println("¹§Ï²ÈÎÎñºÏ¸ñ£¡");
-		
-		System.out.println("-------------------------------------------------------------");
-		// µä¹Ê£º Ê®¶¯È»¾Ü    ±ÊÊÔ¿¼µã£ºÓĞÃ»ÓĞ·ÖºÅ
-		int i = 1;
-		while(i <= 10000) {
-			;  // ¿ÕÓï¾ä£¬É¶Ò²²»¸É£¬¿ÉÒÔÓÃÓÚÑÓÊ±
-		}
-		{
-			System.out.println("I Love You !");
-			i++;
-		}
-	}
+
+    public static void main(String[] args) throws Exception {
+
+        String msg = null;  // ç©º
+        do {
+            System.out.println("æ­£åœ¨ç–¯ç‹‚å­¦ä¹ ä¸­...");
+            Thread.sleep(5000); // æ¨¡æ‹Ÿ5ç§’é’Ÿ
+            System.out.println("æ˜¯å¦åˆæ ¼ï¼Ÿï¼ˆy/nï¼‰");
+            Scanner sc = new Scanner(System.in);
+            msg = sc.next();
+        } while(!"y".equals(msg));
+
+        System.out.println("æ­å–œä»»åŠ¡åˆæ ¼ï¼");
+
+        System.out.println("-------------------------------------------------------------");
+        // å…¸æ•…ï¼š ååŠ¨ç„¶æ‹’    ç¬”è¯•è€ƒç‚¹ï¼šæœ‰æ²¡æœ‰åˆ†å·
+        int i = 1;
+        while(i <= 10000) {
+            ;  // ç©ºè¯­å¥ï¼Œå•¥ä¹Ÿä¸å¹²ï¼Œå¯ä»¥ç”¨äºå»¶æ—¶
+        }
+        {
+            System.out.println("I Love You !");
+            i++;
+        }
+    }
 }

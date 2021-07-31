@@ -1,48 +1,49 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃforÑ­»·ÊµÏÖ²ÂÊı×ÖÓÎÏ·
+    ç¼–ç¨‹ä½¿ç”¨forå¾ªç¯å®ç°çŒœæ•°å­—æ¸¸æˆ
  */
 
-import java.util.Random; 
+import java.util.Random;
 import java.util.Scanner;
- 
+
 public class ForGuessTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.Ëæ»úÉú³É1 ~ 100Ö®¼äµÄÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		Random ra = new Random();
-		int temp = ra.nextInt(100) + 1;
-		//System.out.println("temp = " + temp);
-		
-		// 4.ÉùÃ÷Ò»¸öintÀàĞÍµÄ±äÁ¿À´Í³¼ÆÓÃ»§²Â²âµÄ´ÎÊı
-		int cnt = 0;
-		
-		for(;;) {
-			// 2.ÌáÊ¾ÓÃ»§ÊäÈë1 ~ 100Ö®¼ä²Â²âµÄÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-			System.out.println("ÇëÊäÈë1 ~ 100Ö®¼ä²Â²âµÄÕûÊı£º");
-			Scanner sc = new Scanner(System.in);
-			int num = sc.nextInt();
-			cnt++;
-			
-			// 3.Ê¹ÓÃÓÃ»§ÊäÈëµÄÕûÊıÓëËæ»úÊıÖ®¼ä±È½Ï´óĞ¡²¢¸ø³ö¶ÔÓ¦µÄÌáÊ¾
-			if(num > temp) {
-				System.out.println("²Â´óÁË£¬ÔÙĞ¡Ò»µã°É£¡");
-			} else if(num < temp) {
-				System.out.println("²ÂĞ¡ÁË£¬ÔÙ´óÒ»µã°É£¡");
-			} else {
-				System.out.println("¹§Ï²Äú²Â¶ÔÁË£¬ÓÎÏ·½áÊø£¡");
-				break;
-			}
-		}
-		
-		if(1 == cnt) {
-			System.out.println("Äã¹ûÈ»ÊÇ¸ö´ó¿§£¡");
-		} else if(cnt <= 6) {
-			System.out.println("Ë®Æ½²»´í£¬¼ÌĞø¼ÓÓÍÅ¶£¡");
-		} else {
-			System.out.println("Äã»¹¿ÉÒÔ¶àÍæ¼¸´ÎÓÎÏ·£¡");
-		}
-		
-		
-	}
+
+    public static void main(String[] args) {
+
+        // 1.éšæœºç”Ÿæˆ1 ~ 100ä¹‹é—´çš„æ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        Random ra = new Random();
+        int temp = ra.nextInt(100) + 1;
+        //System.out.println("temp = " + temp);
+
+        // 4.å£°æ˜ä¸€ä¸ªintç±»å‹çš„å˜é‡æ¥ç»Ÿè®¡ç”¨æˆ·çŒœæµ‹çš„æ¬¡æ•°
+        int cnt = 0;
+
+        for(;;) {
+            // 2.æç¤ºç”¨æˆ·è¾“å…¥1 ~ 100ä¹‹é—´çŒœæµ‹çš„æ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+            System.out.println("è¯·è¾“å…¥1 ~ 100ä¹‹é—´çŒœæµ‹çš„æ•´æ•°ï¼š");
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            cnt++;
+
+            // 3.ä½¿ç”¨ç”¨æˆ·è¾“å…¥çš„æ•´æ•°ä¸éšæœºæ•°ä¹‹é—´æ¯”è¾ƒå¤§å°å¹¶ç»™å‡ºå¯¹åº”çš„æç¤º
+            if(num > temp) {
+                System.out.println("çŒœå¤§äº†ï¼Œå†å°ä¸€ç‚¹å§ï¼");
+            } else if(num < temp) {
+                System.out.println("çŒœå°äº†ï¼Œå†å¤§ä¸€ç‚¹å§ï¼");
+            } else {
+                System.out.println("æ­å–œæ‚¨çŒœå¯¹äº†ï¼Œæ¸¸æˆç»“æŸï¼");
+                break;
+            }
+        }
+
+        if(1 == cnt) {
+            System.out.println("ä½ æœç„¶æ˜¯ä¸ªå¤§å’–ï¼");
+        } else if(cnt <= 6) {
+            System.out.println("æ°´å¹³ä¸é”™ï¼Œç»§ç»­åŠ æ²¹å“¦ï¼");
+        } else {
+            System.out.println("ä½ è¿˜å¯ä»¥å¤šç©å‡ æ¬¡æ¸¸æˆï¼");
+        }
+
+
+    }
 }

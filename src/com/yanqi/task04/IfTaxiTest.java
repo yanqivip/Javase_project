@@ -1,34 +1,35 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃif·ÖÖ§½á¹¹ÊµÏÖ³ö×â³µ¼Æ·ÑÏµÍ³µÄÊµÏÖ
+    ç¼–ç¨‹ä½¿ç”¨ifåˆ†æ”¯ç»“æ„å®ç°å‡ºç§Ÿè½¦è®¡è´¹ç³»ç»Ÿçš„å®ç°
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfTaxiTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈë¹«ÀïÊıºÍµÈ´ıµÄÃëÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈë¹«ÀïÊıºÍµÈ´ıµÄÃëÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int km = sc.nextInt();
-		int sec = sc.nextInt();
-		
-		// 2.¸ù¾İ¹«ÀïÊı¼ÆËã¶ÔÓ¦µÄÀï³Ì·Ñ²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		int kmPrice = 0;
-		if(km <= 3) {
-			kmPrice = 13;
-		} else if(km <= 15) {
-			kmPrice = 13 + (km - 3) * 2;
-		} else {
-			kmPrice = 13 + (15 - 3) * 2 + (km - 15) * 3;
-		}
-		
-		// 3.¸ù¾İµÈ´ıµÄÃëÊıÀ´¼ÆËã¶ÔÓ¦µÄµÈ´ı·Ñ²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		int secPrice = sec / 150;
-		
-		// 4.¼ÆËã×Ü·ÑÓÃ²¢´òÓ¡
-		int sumPrice = kmPrice + secPrice;
-		System.out.println("±¾´Î³ö×â³µµÄ×Ü·ÑÓÃÊÇ£º" + sumPrice);
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥å…¬é‡Œæ•°å’Œç­‰å¾…çš„ç§’æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥å…¬é‡Œæ•°å’Œç­‰å¾…çš„ç§’æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int km = sc.nextInt();
+        int sec = sc.nextInt();
+
+        // 2.æ ¹æ®å…¬é‡Œæ•°è®¡ç®—å¯¹åº”çš„é‡Œç¨‹è´¹å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        int kmPrice = 0;
+        if(km <= 3) {
+            kmPrice = 13;
+        } else if(km <= 15) {
+            kmPrice = 13 + (km - 3) * 2;
+        } else {
+            kmPrice = 13 + (15 - 3) * 2 + (km - 15) * 3;
+        }
+
+        // 3.æ ¹æ®ç­‰å¾…çš„ç§’æ•°æ¥è®¡ç®—å¯¹åº”çš„ç­‰å¾…è´¹å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        int secPrice = sec / 150;
+
+        // 4.è®¡ç®—æ€»è´¹ç”¨å¹¶æ‰“å°
+        int sumPrice = kmPrice + secPrice;
+        System.out.println("æœ¬æ¬¡å‡ºç§Ÿè½¦çš„æ€»è´¹ç”¨æ˜¯ï¼š" + sumPrice);
+    }
 }

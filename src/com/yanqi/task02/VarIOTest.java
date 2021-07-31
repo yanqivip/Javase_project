@@ -1,30 +1,31 @@
+package com.yanqi.task02;
 /*
-   ±à³ÌÊµÏÖ±äÁ¿µÄÊäÈëÊä³ö
+   ç¼–ç¨‹å®ç°å˜é‡çš„è¾“å…¥è¾“å‡º
  */
 
-// µ¼ÈëjavaÄ¿Â¼ÖĞutilÄ¿Â¼µÄScannerÀà
-import java.util.Scanner; 
- 
+// å¯¼å…¥javaç›®å½•ä¸­utilç›®å½•çš„Scannerç±»
+import java.util.Scanner;
+
 public class VarIOTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷Á½¸ö±äÁ¿ÓÃÓÚ¼ÇÂ¼ĞÕÃûºÍÄêÁäĞÅÏ¢
-		//String name;
-		//int age;
-		
-		// 2.ÌáÊ¾ÓÃ»§´Ó¼üÅÌÊäÈëĞÕÃûºÍÄêÁäĞÅÏ¢²¢·ÅÈëµ½±äÁ¿ÖĞ   ±äÁ¿ËæÊ¹ÓÃËæÉùÃ÷
-		System.out.println("ÇëÊäÈëÄúµÄĞÕÃûºÍÄêÁäĞÅÏ¢£º");
-		// ´´½¨Ò»¸öÉ¨ÃèÆ÷À´É¨Ãè¼üÅÌÊäÈëµÄÄÚÈİ  System.in´ú±í¼üÅÌÊäÈë
-		Scanner sc = new Scanner(System.in);
-		// Í¨¹ıÉ¨ÃèÆ÷¶ÁÈ¡Ò»¸ö×Ö·û´®Êı¾İ·ÅÈë±äÁ¿nameÖĞ
-		String name = sc.next();
-		// Í¨¹ıÉ¨ÃèÆ÷¶ÁÈ¡Ò»¸öÕûÊıÊı¾İ·ÅÈë±äÁ¿ageÖĞ
-		int age = sc.nextInt();
-		
-		// 3.´òÓ¡±äÁ¿µÄÊıÖµ     ¾¡¿ÉÄÜ¼õÉÙÖØ¸´µÄ´úÂë
-		//System.out.println("name = " + name);
-		//System.out.println("age = " + age);
-		System.out.println("name = " + name + ", age = " + age);
-	}
-} 
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸¤ä¸ªå˜é‡ç”¨äºè®°å½•å§“åå’Œå¹´é¾„ä¿¡æ¯
+        //String name;
+        //int age;
+
+        // 2.æç¤ºç”¨æˆ·ä»é”®ç›˜è¾“å…¥å§“åå’Œå¹´é¾„ä¿¡æ¯å¹¶æ”¾å…¥åˆ°å˜é‡ä¸­   å˜é‡éšä½¿ç”¨éšå£°æ˜
+        System.out.println("è¯·è¾“å…¥æ‚¨çš„å§“åå’Œå¹´é¾„ä¿¡æ¯ï¼š");
+        // åˆ›å»ºä¸€ä¸ªæ‰«æå™¨æ¥æ‰«æé”®ç›˜è¾“å…¥çš„å†…å®¹  System.inä»£è¡¨é”®ç›˜è¾“å…¥
+        Scanner sc = new Scanner(System.in);
+        // é€šè¿‡æ‰«æå™¨è¯»å–ä¸€ä¸ªå­—ç¬¦ä¸²æ•°æ®æ”¾å…¥å˜é‡nameä¸­
+        String name = sc.next();
+        // é€šè¿‡æ‰«æå™¨è¯»å–ä¸€ä¸ªæ•´æ•°æ•°æ®æ”¾å…¥å˜é‡ageä¸­
+        int age = sc.nextInt();
+
+        // 3.æ‰“å°å˜é‡çš„æ•°å€¼     å°½å¯èƒ½å‡å°‘é‡å¤çš„ä»£ç 
+        //System.out.println("name = " + name);
+        //System.out.println("age = " + age);
+        System.out.println("name = " + name + ", age = " + age);
+    }
+}

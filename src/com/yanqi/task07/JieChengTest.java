@@ -1,12 +1,13 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖÀÛ³Ë»ıµÄ¼ÆËã²¢´òÓ¡
+    ç¼–ç¨‹å®ç°ç´¯ä¹˜ç§¯çš„è®¡ç®—å¹¶æ‰“å°
  */
 public class JieChengTest {
-	
-	// ×Ô¶¨Òå³ÉÔ±·½·¨ÊµÏÖ½«²ÎÊınµÄ½×³Ë¼ÆËã³öÀ´²¢·µ»Ø
-	// 1! = 1;     2! = 1*2;   3! = 1*2*3;   ...   n! = 1*2*3*...*n;
-	int show(int n) { // int n=5; int n = 4; int n = 3; int n = 2;  int n = 1;
-		// µİÍÆµÄ·½Ê½ 
+
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•å®ç°å°†å‚æ•°nçš„é˜¶ä¹˜è®¡ç®—å‡ºæ¥å¹¶è¿”å›
+    // 1! = 1;     2! = 1*2;   3! = 1*2*3;   ...   n! = 1*2*3*...*n;
+    int show(int n) { // int n=5; int n = 4; int n = 3; int n = 2;  int n = 1;
+        // é€’æ¨çš„æ–¹å¼
 		/*
 		int num = 1;
 		for(int i = 1; i <= n; i++) {
@@ -20,39 +21,39 @@ public class JieChengTest {
 			3! = 3 * 2 * 1;
 			2! = 2 * 1;
 			1! = 1;
-			
+
 			5! = 5 * 4!;
 			4! = 4 * 3!;
 			3! = 3 * 2!;
 			2! = 2 * 1!;
 			1! = 1;
-			
+
 			n! = n * (n-1)!;
-		  
+
 		*/
-		// µİ¹éµÄ·½Ê½
-		// µ±nµÄÊıÖµÎª1Ê±£¬Ôò½×³ËµÄ½á¹û¾ÍÊÇ1
+        // é€’å½’çš„æ–¹å¼
+        // å½“nçš„æ•°å€¼ä¸º1æ—¶ï¼Œåˆ™é˜¶ä¹˜çš„ç»“æœå°±æ˜¯1
 		/*
 		if(1 == n) {
 			return 1;
 		}
 		*/
-		if(1 == n) return 1;
-		// ·ñÔò½×³ËµÄ½á¹û¾ÍÊÇ n*(n-1)!
-		return n*show(n-1);
-		// show(5) => return 5*show(4); => 120
-		// show(4) => return 4*show(3); => 24 
-		// show(3) => return 3*show(2); => 6
-		// show(2) => return 2*show(1); => 2
-		// show(1) => return 1;         => 1
-	}
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷JieChengTestÀàĞÍµÄÒıÓÃÖ¸Ïò¸ÃÀàĞÍµÄ¶ÔÏó
-		JieChengTest jct = new JieChengTest();
-		// 2.µ÷ÓÃ·½·¨½øĞĞ¼ÆËã²¢´òÓ¡
-		int res = jct.show(5);
-		System.out.println("×îÖÕµÄ¼ÆËã½á¹ûÊÇ£º" + res); // 120
-	}
+        if(1 == n) return 1;
+        // å¦åˆ™é˜¶ä¹˜çš„ç»“æœå°±æ˜¯ n*(n-1)!
+        return n*show(n-1);
+        // show(5) => return 5*show(4); => 120
+        // show(4) => return 4*show(3); => 24
+        // show(3) => return 3*show(2); => 6
+        // show(2) => return 2*show(1); => 2
+        // show(1) => return 1;         => 1
+    }
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜JieChengTestç±»å‹çš„å¼•ç”¨æŒ‡å‘è¯¥ç±»å‹çš„å¯¹è±¡
+        JieChengTest jct = new JieChengTest();
+        // 2.è°ƒç”¨æ–¹æ³•è¿›è¡Œè®¡ç®—å¹¶æ‰“å°
+        int res = jct.show(5);
+        System.out.println("æœ€ç»ˆçš„è®¡ç®—ç»“æœæ˜¯ï¼š" + res); // 120
+    }
 }

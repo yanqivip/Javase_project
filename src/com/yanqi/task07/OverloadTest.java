@@ -1,45 +1,46 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖ·½·¨ÖØÔØÖ÷ÒªĞÎÊ½µÄ²âÊÔ
+    ç¼–ç¨‹å®ç°æ–¹æ³•é‡è½½ä¸»è¦å½¢å¼çš„æµ‹è¯•
  */
 public class OverloadTest {
-	
-	// ×Ô¶¨Òå³ÉÔ±·½·¨
-	void show() {
-		System.out.println("show()");
-	}
-	void show(int i) { // ok  ÌåÏÖÔÚ·½·¨²ÎÊıµÄ¸öÊı²»Í¬
-		System.out.println("show(int)");
-	}
-	void show(int i, double d) { // ok  ÌåÏÖÔÚ·½·¨²ÎÊıµÄ¸öÊı²»Í¬
-		System.out.println("show(int, double)");
-	}
-	void show(int i, int j) { // ok  ÌåÏÖÔÚ·½·¨²ÎÊıµÄÀàĞÍ²»Í¬
-		System.out.println("show(int, int)");
-	}
-	void show(double d, int i) { // ok  ÌåÏÖÔÚ·½·¨²ÎÊıµÄË³Ğò²»Í¬
-		System.out.println("show(double, int)");
-	}
+
+    // è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•
+    void show() {
+        System.out.println("show()");
+    }
+    void show(int i) { // ok  ä½“ç°åœ¨æ–¹æ³•å‚æ•°çš„ä¸ªæ•°ä¸åŒ
+        System.out.println("show(int)");
+    }
+    void show(int i, double d) { // ok  ä½“ç°åœ¨æ–¹æ³•å‚æ•°çš„ä¸ªæ•°ä¸åŒ
+        System.out.println("show(int, double)");
+    }
+    void show(int i, int j) { // ok  ä½“ç°åœ¨æ–¹æ³•å‚æ•°çš„ç±»å‹ä¸åŒ
+        System.out.println("show(int, int)");
+    }
+    void show(double d, int i) { // ok  ä½“ç°åœ¨æ–¹æ³•å‚æ•°çš„é¡ºåºä¸åŒ
+        System.out.println("show(double, int)");
+    }
 	/*
-	void show(double a, int b) { // error Óë²ÎÊı±äÁ¿ÃûÎŞ¹Ø
+	void show(double a, int b) { // error ä¸å‚æ•°å˜é‡åæ— å…³
 		System.out.println("show(double, int)");
 	}
 	*/
 	/*
-	int show(double d, int i) { // error, Óë·µ»ØÖµÀàĞÍÎŞ¹Ø
+	int show(double d, int i) { // error, ä¸è¿”å›å€¼ç±»å‹æ— å…³
 		System.out.println("show(double, int)");
 	}
 	*/
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷OverloadTestÀàĞÍµÄÒıÓÃÖ¸Ïò¸ÃÀàĞÍµÄ¶ÔÏó
-		OverloadTest ot = new OverloadTest();
-		// 2.µ÷ÓÃshow·½·¨
-		ot.show();
-		ot.show(66);
-		ot.show(66, 3.14);
-		ot.show(66, 118);
-		ot.show(3.14, 118);
-		//ot.show(3.14, 66);
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜OverloadTestç±»å‹çš„å¼•ç”¨æŒ‡å‘è¯¥ç±»å‹çš„å¯¹è±¡
+        OverloadTest ot = new OverloadTest();
+        // 2.è°ƒç”¨showæ–¹æ³•
+        ot.show();
+        ot.show(66);
+        ot.show(66, 3.14);
+        ot.show(66, 118);
+        ot.show(3.14, 118);
+        //ot.show(3.14, 66);
+    }
 }

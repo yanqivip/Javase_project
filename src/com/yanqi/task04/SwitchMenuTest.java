@@ -1,30 +1,31 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃswitch case·ÖÖ§½á¹¹À´Ä£Äâ²Ëµ¥µÄĞ§¹û
+    ç¼–ç¨‹ä½¿ç”¨switch caseåˆ†æ”¯ç»“æ„æ¥æ¨¡æ‹Ÿèœå•çš„æ•ˆæœ
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class SwitchMenuTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.»æÖÆ×Ö·û½çÃæ
-		System.out.println("         »¶Ó­À´µ½À­¹´½ÌÓı");
-		System.out.println("-------------------------------------");
-		System.out.print(" [1]Ñ§Ô±ÏµÍ³     ");
-		System.out.println("[2]¹ÜÀíÔ±ÏµÍ³");
-		System.out.println(" [0]ÍË³öÏµÍ³");
-		System.out.println("-------------------------------------");
-		System.out.println("ÇëÑ¡ÔñÒª½øÈëµÄÏµÍ³£º");
-		Scanner sc = new Scanner(System.in);
-		int choose = sc.nextInt();
-		
-		// 2.Ê¹ÓÃswitch case·ÖÖ§½á¹¹À´Ä£ÄâÓÃ»§µÄÑ¡Ôñ²¢¸ø³öÌáÊ¾
-		switch(choose) {
-			case 1: System.out.println("ÕıÔÚ½øÈëÑ§Ô±ÏµÍ³..."); break;
-			case 2: System.out.println("ÕıÔÚ½øÈë¹ÜÀíÔ±ÏµÍ³..."); break;
-			case 0: System.out.println("Ğ»Ğ»Ê¹ÓÃ£¬ÏÂ´ÎÔÙ¼û£¡"); break;
-			default: System.out.println("ÊäÈë´íÎó£¬ÇëÖØĞÂÑ¡Ôñ£¡");
-		}
-	}
+
+    public static void main(String[] args) {
+
+        // 1.ç»˜åˆ¶å­—ç¬¦ç•Œé¢
+        System.out.println("         æ¬¢è¿æ¥åˆ°æ‹‰å‹¾æ•™è‚²");
+        System.out.println("-------------------------------------");
+        System.out.print(" [1]å­¦å‘˜ç³»ç»Ÿ     ");
+        System.out.println("[2]ç®¡ç†å‘˜ç³»ç»Ÿ");
+        System.out.println(" [0]é€€å‡ºç³»ç»Ÿ");
+        System.out.println("-------------------------------------");
+        System.out.println("è¯·é€‰æ‹©è¦è¿›å…¥çš„ç³»ç»Ÿï¼š");
+        Scanner sc = new Scanner(System.in);
+        int choose = sc.nextInt();
+
+        // 2.ä½¿ç”¨switch caseåˆ†æ”¯ç»“æ„æ¥æ¨¡æ‹Ÿç”¨æˆ·çš„é€‰æ‹©å¹¶ç»™å‡ºæç¤º
+        switch(choose) {
+            case 1: System.out.println("æ­£åœ¨è¿›å…¥å­¦å‘˜ç³»ç»Ÿ..."); break;
+            case 2: System.out.println("æ­£åœ¨è¿›å…¥ç®¡ç†å‘˜ç³»ç»Ÿ..."); break;
+            case 0: System.out.println("è°¢è°¢ä½¿ç”¨ï¼Œä¸‹æ¬¡å†è§ï¼"); break;
+            default: System.out.println("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©ï¼");
+        }
+    }
 }

@@ -1,14 +1,15 @@
+package com.yanqi.task07;
 /*
-    ±à³ÌÊµÏÖ¶Ô·ÑÊÏÊıÁĞÀàµÄ²âÊÔ  ²âÊÔÀà
+    ç¼–ç¨‹å®ç°å¯¹è´¹æ°æ•°åˆ—ç±»çš„æµ‹è¯•  æµ‹è¯•ç±»
  */
 public class FeeTest {
-	
-	public static void main(String[] args) {
-	
-		// 1.ÉùÃ÷FeeTestÀàĞÍµÄÒıÓÃÖ¸Ïò¸ÃÀàĞÍµÄ¶ÔÏó
-		Fee ft = new Fee();
-		// 2.µ÷ÓÃ·½·¨¼ÆËã²¢´òÓ¡
-		int res = ft.show(55);
-		System.out.println("¼ÆËãµÄ½á¹ûÊÇ£º" + res); // 5
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜FeeTestç±»å‹çš„å¼•ç”¨æŒ‡å‘è¯¥ç±»å‹çš„å¯¹è±¡
+        Fee ft = new Fee();
+        // 2.è°ƒç”¨æ–¹æ³•è®¡ç®—å¹¶æ‰“å°
+        int res = ft.show(55);
+        System.out.println("è®¡ç®—çš„ç»“æœæ˜¯ï¼š" + res); // 5
+    }
 }

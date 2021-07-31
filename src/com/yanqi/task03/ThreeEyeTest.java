@@ -1,22 +1,23 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊ¹ÓÃÈýÄ¿ÔËËã·û²éÕÒ×î´óÖµ
+    ç¼–ç¨‹ä½¿ç”¨ä¸‰ç›®è¿ç®—ç¬¦æŸ¥æ‰¾æœ€å¤§å€¼
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class ThreeEyeTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÁ½¸öÕûÊý²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÁ½¸öÕûÊý£º");
-		Scanner sc = new Scanner(System.in);
-		int ia = sc.nextInt();
-		int ib = sc.nextInt();
-		
-		// 2.Ê¹ÓÃÈýÄ¿ÔËËã·ûÕÒµ½×î´óÖµ²¢´òÓ¡
-		int max = ia > ib? ia: ib;
-		System.out.println("×î´óÖµÊÇ£º" + max);
-		System.out.println("×î´óÖµÊÇ£º" + (ia > ib? ia: ib));
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸¤ä¸ªæ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int ia = sc.nextInt();
+        int ib = sc.nextInt();
+
+        // 2.ä½¿ç”¨ä¸‰ç›®è¿ç®—ç¬¦æ‰¾åˆ°æœ€å¤§å€¼å¹¶æ‰“å°
+        int max = ia > ib? ia: ib;
+        System.out.println("æœ€å¤§å€¼æ˜¯ï¼š" + max);
+        System.out.println("æœ€å¤§å€¼æ˜¯ï¼š" + (ia > ib? ia: ib));
+    }
 }

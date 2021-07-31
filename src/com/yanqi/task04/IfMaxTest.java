@@ -1,34 +1,35 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃif·ÖÖ§½á¹¹²éÕÒÁ½¸öÕûÊýÖÐµÄ×î´óÖµ
+    ç¼–ç¨‹ä½¿ç”¨ifåˆ†æ”¯ç»“æž„æŸ¥æ‰¾ä¸¤ä¸ªæ•´æ•°ä¸­çš„æœ€å¤§å€¼
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfMaxTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÁ½¸öÕûÊý²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÁ½¸öÕûÊý£º");
-		Scanner sc = new Scanner(System.in);
-		int ia = sc.nextInt();
-		int ib = sc.nextInt();
-		
-		// 2.Ê¹ÓÃif·ÖÖ§½á¹¹ÕÒµ½×î´óÖµ²¢´òÓ¡
-		// ·½Ê½Ò»£ºÊ¹ÓÃÁ½¸öif·ÖÖ§½á¹¹¿ÉÒÔÕÒµ½×î´óÖµ
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸¤ä¸ªæ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int ia = sc.nextInt();
+        int ib = sc.nextInt();
+
+        // 2.ä½¿ç”¨ifåˆ†æ”¯ç»“æž„æ‰¾åˆ°æœ€å¤§å€¼å¹¶æ‰“å°
+        // æ–¹å¼ä¸€ï¼šä½¿ç”¨ä¸¤ä¸ªifåˆ†æ”¯ç»“æž„å¯ä»¥æ‰¾åˆ°æœ€å¤§å€¼
 		/*
 		if(ia >= ib) {
-			System.out.println("×î´óÖµÊÇ£º" + ia);
+			System.out.println("æœ€å¤§å€¼æ˜¯ï¼š" + ia);
 		}
 		if(ia < ib) {
-			System.out.println("×î´óÖµÊÇ£º" + ib);
+			System.out.println("æœ€å¤§å€¼æ˜¯ï¼š" + ib);
 		}
 		*/
-		// ·½Ê½¶þ£º¼ÙÉèµÚÒ»¸öÊýÎª×î´óÖµ²¢¼ÇÂ¼  ÍÆ¼ö·½Ê½  Í¨ÓÃÐÔ
-		int max = ia;
-		if(ib > max) {
-			max = ib;
-		}
-		System.out.println("×î´óÖµÊÇ£º" + max);
-	}
+        // æ–¹å¼äºŒï¼šå‡è®¾ç¬¬ä¸€ä¸ªæ•°ä¸ºæœ€å¤§å€¼å¹¶è®°å½•  æŽ¨èæ–¹å¼  é€šç”¨æ€§
+        int max = ia;
+        if(ib > max) {
+            max = ib;
+        }
+        System.out.println("æœ€å¤§å€¼æ˜¯ï¼š" + max);
+    }
 }

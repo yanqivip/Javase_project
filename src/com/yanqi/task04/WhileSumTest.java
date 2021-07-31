@@ -1,32 +1,33 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃwhileÑ­»·ÊµÏÖµ÷ºÍÊıÁĞµÄÀÛ¼ÓºÍ²¢´òÓ¡
+    ç¼–ç¨‹ä½¿ç”¨whileå¾ªç¯å®ç°è°ƒå’Œæ•°åˆ—çš„ç´¯åŠ å’Œå¹¶æ‰“å°
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class WhileSumTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒ»¸öÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		// 2.Ê¹ÓÃwhileÑ­»·¼ÆËãµ÷ºÍÊıÁĞµÄºÍ²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		double sum = 0.0;
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸€ä¸ªæ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // 2.ä½¿ç”¨whileå¾ªç¯è®¡ç®—è°ƒå’Œæ•°åˆ—çš„å’Œå¹¶ä½¿ç”¨å˜é‡è®°å½•
+        double sum = 0.0;
 		/*
 		for(int i = 1; i <= num; i++) {
 			sum += 1.0/i;
 		}
 		*/
-		int i = 1;
-		while(i <= num) {
-			sum += 1.0/i;
-			 i++;
-		}
-		
-		// 3.´òÓ¡×îÖÕµÄ¼ÆËã½á¹û
-		System.out.println("×îÖÕµÄ¼ÆËã½á¹ûÊÇ£º" + sum);
-	}
+        int i = 1;
+        while(i <= num) {
+            sum += 1.0/i;
+            i++;
+        }
+
+        // 3.æ‰“å°æœ€ç»ˆçš„è®¡ç®—ç»“æœ
+        System.out.println("æœ€ç»ˆçš„è®¡ç®—ç»“æœæ˜¯ï¼š" + sum);
+    }
 }

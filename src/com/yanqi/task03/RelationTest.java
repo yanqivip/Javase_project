@@ -1,22 +1,23 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊµÏÖ¹ØÏµÔËËã·ûµÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°å…³ç³»è¿ç®—ç¬¦çš„ä½¿ç”¨
  */
 public class RelationTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷Á½¸öintÀàĞÍµÄ±äÁ¿²¢³õÊ¼»¯
-		int ia = 5;
-		int ib = 2;
-		
-		// 2.Ê¹ÓÃ±äÁ¿ÊµÏÖ¹ØÏµÔËËã·ûµÄÊ¹ÓÃ²¢´òÓ¡½á¹û
-		boolean b1 = ia > ib;
-		System.out.println("b1 = " + b1); // b1 = true
-		System.out.println(ia > ib);   // ÊÇ·ñ´óÓÚ       true
-		System.out.println(ia >= ib);  // ÊÇ·ñ´óÓÚµÈÓÚ   ´óÓÚ»òÕßµÈÓÚ  true
-		System.out.println(ia < ib);   // ÊÇ·ñĞ¡ÓÚ       false
-		System.out.println(ia <= ib);  // ÊÇ·ñĞ¡ÓÚµÈÓÚ   false
-		System.out.println(ia == ib);  // ÊÇ·ñµÈÓÚ       false
-		System.out.println(ia != ib);  // ÊÇ·ñ²»µÈÓÚ     true
-	}
+
+    public static void main(String[] args) {
+
+        // 1.å£°æ˜ä¸¤ä¸ªintç±»å‹çš„å˜é‡å¹¶åˆå§‹åŒ–
+        int ia = 5;
+        int ib = 2;
+
+        // 2.ä½¿ç”¨å˜é‡å®ç°å…³ç³»è¿ç®—ç¬¦çš„ä½¿ç”¨å¹¶æ‰“å°ç»“æœ
+        boolean b1 = ia > ib;
+        System.out.println("b1 = " + b1); // b1 = true
+        System.out.println(ia > ib);   // æ˜¯å¦å¤§äº       true
+        System.out.println(ia >= ib);  // æ˜¯å¦å¤§äºç­‰äº   å¤§äºæˆ–è€…ç­‰äº  true
+        System.out.println(ia < ib);   // æ˜¯å¦å°äº       false
+        System.out.println(ia <= ib);  // æ˜¯å¦å°äºç­‰äº   false
+        System.out.println(ia == ib);  // æ˜¯å¦ç­‰äº       false
+        System.out.println(ia != ib);  // æ˜¯å¦ä¸ç­‰äº     true
+    }
 }

@@ -1,30 +1,31 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃif else if else·ÖÖ§½á¹¹ÅÐ¶Ï¿¼ÊÔ³É¼¨ËùÔÚµÄµÈ¼¶
+    ç¼–ç¨‹ä½¿ç”¨if else if elseåˆ†æ”¯ç»“æž„åˆ¤æ–­è€ƒè¯•æˆç»©æ‰€åœ¨çš„ç­‰çº§
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfScoreTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈë¿¼ÊÔ³É¼¨²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÄúµÄ¿¼ÊÔ³É¼¨£º");
-		Scanner sc = new Scanner(System.in);
-		int score = sc.nextInt();
-		
-		// 2.Ê¹ÓÃif else if else·ÖÖ§½á¹¹ÅÐ¶ÏËùÔÚµÄµÈ¼¶²¢´òÓ¡
-		// 90 / 10 = 9;    91 / 10 = 9;  92 / 10 = 9;  99 / 10 = 9;   100 / 10 = 10;
-		if(score >= 90 && score <= 100) {     // case 9:    case 10:  
-			System.out.println("µÈ¼¶A");
-		} else if(score >= 80) {              // case 8: 
-			System.out.println("µÈ¼¶B");
-		} else if(score >= 70) {              // case 7:
-			System.out.println("µÈ¼¶C");
-		} else if(score >= 60) {              // case 6:
-			System.out.println("µÈ¼¶D");   
-		} else {                              // default:
-			System.out.println("µÈ¼¶E");
-		}
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥è€ƒè¯•æˆç»©å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥æ‚¨çš„è€ƒè¯•æˆç»©ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int score = sc.nextInt();
+
+        // 2.ä½¿ç”¨if else if elseåˆ†æ”¯ç»“æž„åˆ¤æ–­æ‰€åœ¨çš„ç­‰çº§å¹¶æ‰“å°
+        // 90 / 10 = 9;    91 / 10 = 9;  92 / 10 = 9;  99 / 10 = 9;   100 / 10 = 10;
+        if(score >= 90 && score <= 100) {     // case 9:    case 10:
+            System.out.println("ç­‰çº§A");
+        } else if(score >= 80) {              // case 8:
+            System.out.println("ç­‰çº§B");
+        } else if(score >= 70) {              // case 7:
+            System.out.println("ç­‰çº§C");
+        } else if(score >= 60) {              // case 6:
+            System.out.println("ç­‰çº§D");
+        } else {                              // default:
+            System.out.println("ç­‰çº§E");
+        }
+    }
 }

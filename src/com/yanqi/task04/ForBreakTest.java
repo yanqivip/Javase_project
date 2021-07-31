@@ -1,35 +1,36 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃforÑ­»·ºÍbreak¹Ø¼ü×ÖÀ´Ä£ÄâÁÄÌìµÄ¹ı³Ì
+    ç¼–ç¨‹ä½¿ç”¨forå¾ªç¯å’Œbreakå…³é”®å­—æ¥æ¨¡æ‹ŸèŠå¤©çš„è¿‡ç¨‹
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class ForBreakTest {
-	
-	public static void main(String[] args) {
-		
-		// 5.ÉùÃ÷Ò»¸öbooleanÀàĞÍµÄ±äÁ¿×÷Îª·¢ËÍ·½µÄ±êÖ¾
-		boolean flag = true;
-		
-		// 4.Ê¹ÓÃÎŞÏŞÑ­»·À´Ä£Äâ²»¶ÏµØÁÄÌì
-		for(;;) {
-			// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒª·¢ËÍµÄÁÄÌìÄÚÈİ²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-			System.out.println("Çë" + (flag? "ÕÅÈı": "ÀîËÄ") +"ÊäÈëÒª·¢ËÍµÄÁÄÌìÄÚÈİ£º");
-			Scanner sc = new Scanner(System.in);
-			String str = sc.next();
-			
-			// 2.ÅĞ¶ÏÓÃ»§ÊäÈëµÄÄÚÈİÊÇ·ñÎª"bye"£¬ÈôÊÇÔòÁÄÌì½áÊø
-			if("bye".equals(str)) {
-				System.out.println("ÁÄÌì½áÊø£¡");
-				break; // ÓÃÓÚÌø³öµ±Ç°Ñ­»·
-			}
-			// 3.Èô²»ÊÇÔò´òÓ¡ÓÃ»§ÊäÈëµÄÁÄÌìÄÚÈİ
-			//else {
-				//System.out.println("ÁÄÌìÄÚÈİÊÇ£º" + str);
-			//}
-			System.out.println((flag? "ÕÅÈıËµ£º": "ÀîËÄËµ£º") + str + "\n\n\n");
-			flag = !flag;
-		}
-		// ...
-	}
+
+    public static void main(String[] args) {
+
+        // 5.å£°æ˜ä¸€ä¸ªbooleanç±»å‹çš„å˜é‡ä½œä¸ºå‘é€æ–¹çš„æ ‡å¿—
+        boolean flag = true;
+
+        // 4.ä½¿ç”¨æ— é™å¾ªç¯æ¥æ¨¡æ‹Ÿä¸æ–­åœ°èŠå¤©
+        for(;;) {
+            // 1.æç¤ºç”¨æˆ·è¾“å…¥è¦å‘é€çš„èŠå¤©å†…å®¹å¹¶ä½¿ç”¨å˜é‡è®°å½•
+            System.out.println("è¯·" + (flag? "å¼ ä¸‰": "æå››") +"è¾“å…¥è¦å‘é€çš„èŠå¤©å†…å®¹ï¼š");
+            Scanner sc = new Scanner(System.in);
+            String str = sc.next();
+
+            // 2.åˆ¤æ–­ç”¨æˆ·è¾“å…¥çš„å†…å®¹æ˜¯å¦ä¸º"bye"ï¼Œè‹¥æ˜¯åˆ™èŠå¤©ç»“æŸ
+            if("bye".equals(str)) {
+                System.out.println("èŠå¤©ç»“æŸï¼");
+                break; // ç”¨äºè·³å‡ºå½“å‰å¾ªç¯
+            }
+            // 3.è‹¥ä¸æ˜¯åˆ™æ‰“å°ç”¨æˆ·è¾“å…¥çš„èŠå¤©å†…å®¹
+            //else {
+            //System.out.println("èŠå¤©å†…å®¹æ˜¯ï¼š" + str);
+            //}
+            System.out.println((flag? "å¼ ä¸‰è¯´ï¼š": "æå››è¯´ï¼š") + str + "\n\n\n");
+            flag = !flag;
+        }
+        // ...
+    }
 }

@@ -1,29 +1,30 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃswitch case·ÖÖ§½á¹¹ÊµÏÖ¿¼ÊÔ³É¼¨µÄµÈ¼¶ÅĞ¶Ï
+    ç¼–ç¨‹ä½¿ç”¨switch caseåˆ†æ”¯ç»“æ„å®ç°è€ƒè¯•æˆç»©çš„ç­‰çº§åˆ¤æ–­
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class SwitchScoreTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈë¿¼ÊÔ³É¼¨²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼  0 ~ 100
-		System.out.println("ÇëÊäÈëÄúµÄ¿¼ÊÔ³É¼¨£º");
-		Scanner sc = new Scanner(System.in);
-		int score = sc.nextInt();
-		
-		// 2.Ê¹ÓÃswitch case·ÖÖ§½á¹¹ÊµÏÖ¿¼ÊÔ³É¼¨µÄµÈ¼¶ÅĞ¶Ï
-		switch(score / 10) {
-			case 10: //System.out.println("µÈ¼¶A"); //break;
-			case 9:  System.out.println("µÈ¼¶A"); break; // case´©Í¸  
-			case 8:  System.out.println("µÈ¼¶B"); break;
-			case 7:  System.out.println("µÈ¼¶C"); break;
-			case 6:  System.out.println("µÈ¼¶D"); break;
-			default: System.out.println("µÈ¼¶E"); //break;
-		}
-		
-		// 3.´òÓ¡Ò»¾ä»°
-		System.out.println("ÊÀ½çÉÏ×î³ÕÇéµÄµÈ´ı¾ÍÊÇÎÒµ±caseÄãµ±switch£¬»òĞíÓÀÔ¶¶¼²»»áÑ¡µ½×Ô¼º£¡");
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥è€ƒè¯•æˆç»©å¹¶ä½¿ç”¨å˜é‡è®°å½•  0 ~ 100
+        System.out.println("è¯·è¾“å…¥æ‚¨çš„è€ƒè¯•æˆç»©ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int score = sc.nextInt();
+
+        // 2.ä½¿ç”¨switch caseåˆ†æ”¯ç»“æ„å®ç°è€ƒè¯•æˆç»©çš„ç­‰çº§åˆ¤æ–­
+        switch(score / 10) {
+            case 10: //System.out.println("ç­‰çº§A"); //break;
+            case 9:  System.out.println("ç­‰çº§A"); break; // caseç©¿é€
+            case 8:  System.out.println("ç­‰çº§B"); break;
+            case 7:  System.out.println("ç­‰çº§C"); break;
+            case 6:  System.out.println("ç­‰çº§D"); break;
+            default: System.out.println("ç­‰çº§E"); //break;
+        }
+
+        // 3.æ‰“å°ä¸€å¥è¯
+        System.out.println("ä¸–ç•Œä¸Šæœ€ç—´æƒ…çš„ç­‰å¾…å°±æ˜¯æˆ‘å½“caseä½ å½“switchï¼Œæˆ–è®¸æ°¸è¿œéƒ½ä¸ä¼šé€‰åˆ°è‡ªå·±ï¼");
+    }
 }

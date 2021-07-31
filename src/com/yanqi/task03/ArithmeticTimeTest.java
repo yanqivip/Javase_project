@@ -1,36 +1,37 @@
+package com.yanqi.task03;
 /*
-    ±à³ÌÊ¹ÓÃËãÊõÔËËã·ûÊµÏÖÃëÊıµÄ²ğ·Ö
+    ç¼–ç¨‹ä½¿ç”¨ç®—æœ¯è¿ç®—ç¬¦å®ç°ç§’æ•°çš„æ‹†åˆ†
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class ArithmeticTimeTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒ»¸öÕıÕûÊıµÄÃëÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÒ»¸öÕıÕûÊıµÄÃëÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		// 2.½«ÕıÕûÊıµÄÃëÊı²ğ·ÖÎªÊ±·ÖÃëºó²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		// 3666Ãë => 1Ğ¡Ê±1·ÖÖÓ6ÃëÖÓ
-		// 3666 / 3600 = 1 Ğ¡Ê±     3666 % 3600 = 66 / 60 = 1 ·ÖÖÓ     3666 % 60 = 6 ÃëÖÓ 
-		int hour = num / 3600;      // ²ğ·ÖĞ¡Ê±Êı
-		int min = num % 3600 / 60;  // ²ğ·Ö·ÖÖÓÊı
-		int sec = num % 60;         // ²ğ·ÖÃëÊı
-		
-		// 3.´òÓ¡×îÖÕµÄ²ğ·Ö½á¹û
-		System.out.println(num + "Ãë×ª»»Îª" + hour + "Ğ¡Ê±" + min + "·ÖÖÓ" + sec + "ÃëÖÓ");
-		
-		System.out.println("---------------------------------------------------------------------");
-		// 4.+¼È¿ÉÒÔ×÷Îª×Ö·û´®Á¬½Ó·û£¬ÓÖ¿ÉÒÔ×÷Îª¼Ó·¨ÔËËã·û
-		// Ö»Òª+Á½±ßµÄ²Ù×÷ÊıÖĞÓĞÒ»¸ö²Ù×÷ÊıÊÇ×Ö·û´®ÀàĞÍ£¬Ôò¸Ã+¾Í±»µ±×ö×Ö·û´®Á¬½Ó·û´¦Àí£¬·ñÔòµ±×ö¼Ó·¨ÔËËã·û´¦Àí
-		System.out.println(hour + min + sec);       // 8
-		System.out.println(hour + min + sec + "");  // 8
-		System.out.println(hour + min + "" + sec);  // 26
-		System.out.println(hour + "" + min + sec);  // 116
-		System.out.println("" + hour + min + sec);  // 116
-		System.out.println("" + (hour + min + sec));// 8
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°çš„ç§’æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°çš„ç§’æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // 2.å°†æ­£æ•´æ•°çš„ç§’æ•°æ‹†åˆ†ä¸ºæ—¶åˆ†ç§’åå¹¶ä½¿ç”¨å˜é‡è®°å½•
+        // 3666ç§’ => 1å°æ—¶1åˆ†é’Ÿ6ç§’é’Ÿ
+        // 3666 / 3600 = 1 å°æ—¶     3666 % 3600 = 66 / 60 = 1 åˆ†é’Ÿ     3666 % 60 = 6 ç§’é’Ÿ
+        int hour = num / 3600;      // æ‹†åˆ†å°æ—¶æ•°
+        int min = num % 3600 / 60;  // æ‹†åˆ†åˆ†é’Ÿæ•°
+        int sec = num % 60;         // æ‹†åˆ†ç§’æ•°
+
+        // 3.æ‰“å°æœ€ç»ˆçš„æ‹†åˆ†ç»“æœ
+        System.out.println(num + "ç§’è½¬æ¢ä¸º" + hour + "å°æ—¶" + min + "åˆ†é’Ÿ" + sec + "ç§’é’Ÿ");
+
+        System.out.println("---------------------------------------------------------------------");
+        // 4.+æ—¢å¯ä»¥ä½œä¸ºå­—ç¬¦ä¸²è¿æ¥ç¬¦ï¼Œåˆå¯ä»¥ä½œä¸ºåŠ æ³•è¿ç®—ç¬¦
+        // åªè¦+ä¸¤è¾¹çš„æ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªæ“ä½œæ•°æ˜¯å­—ç¬¦ä¸²ç±»å‹ï¼Œåˆ™è¯¥+å°±è¢«å½“åšå­—ç¬¦ä¸²è¿æ¥ç¬¦å¤„ç†ï¼Œå¦åˆ™å½“åšåŠ æ³•è¿ç®—ç¬¦å¤„ç†
+        System.out.println(hour + min + sec);       // 8
+        System.out.println(hour + min + sec + "");  // 8
+        System.out.println(hour + min + "" + sec);  // 26
+        System.out.println(hour + "" + min + sec);  // 116
+        System.out.println("" + hour + min + sec);  // 116
+        System.out.println("" + (hour + min + sec));// 8
+    }
 }

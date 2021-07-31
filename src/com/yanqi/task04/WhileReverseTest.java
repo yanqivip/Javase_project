@@ -1,32 +1,33 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃwhileÑ­»·ÊµÏÖÈÎÒâÕıÕûÊıµÄ·´ÏòÊä³ö
+    ç¼–ç¨‹ä½¿ç”¨whileå¾ªç¯å®ç°ä»»æ„æ­£æ•´æ•°çš„åå‘è¾“å‡º
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class WhileReverseTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈëÒ»¸öÕıÕûÊı²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼  123
-		System.out.println("ÇëÊäÈëÒ»¸öÕıÕûÊı£º");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		// 2.Ê¹ÓÃwhileÑ­»·½øĞĞ²ğ·Ö²¢´òÓ¡
-		//while(num > 0) {
-			//System.out.print(num % 10);  // ²ğ·Ö¸öÎ»Êı
-			//num /= 10;  // ¶ªÆú¸öÎ»Êı
-		//}
-		// 2.Ê¹ÓÃwhileÑ­»·²ğ·ÖÕûÊıÖĞµÄÃ¿¸öÊı×Ö²¢¼ÇÂ¼µ½±äÁ¿ÖĞ
-		int res = 0;
-		int temp = num;  // Ö¸¶¨±äÁ¿×÷ÎªnumµÄÌæÉí
-		while(temp > 0) {
-			res = res*10 + temp % 10; // 3     32   321
-			temp /= 10;               // 12    1    0
-		}
-		
-		// 3.´òÓ¡ÄæĞòºóµÄ½á¹û
-		System.out.println(num + "ÄæĞòºóµÄ½á¹ûÊÇ£º" + res);
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°å¹¶ä½¿ç”¨å˜é‡è®°å½•  123
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼š");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // 2.ä½¿ç”¨whileå¾ªç¯è¿›è¡Œæ‹†åˆ†å¹¶æ‰“å°
+        //while(num > 0) {
+        //System.out.print(num % 10);  // æ‹†åˆ†ä¸ªä½æ•°
+        //num /= 10;  // ä¸¢å¼ƒä¸ªä½æ•°
+        //}
+        // 2.ä½¿ç”¨whileå¾ªç¯æ‹†åˆ†æ•´æ•°ä¸­çš„æ¯ä¸ªæ•°å­—å¹¶è®°å½•åˆ°å˜é‡ä¸­
+        int res = 0;
+        int temp = num;  // æŒ‡å®šå˜é‡ä½œä¸ºnumçš„æ›¿èº«
+        while(temp > 0) {
+            res = res*10 + temp % 10; // 3     32   321
+            temp /= 10;               // 12    1    0
+        }
+
+        // 3.æ‰“å°é€†åºåçš„ç»“æœ
+        System.out.println(num + "é€†åºåçš„ç»“æœæ˜¯ï¼š" + res);
+    }
 }

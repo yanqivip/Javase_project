@@ -1,34 +1,35 @@
+package com.yanqi.task06;
 /*
-    ±à³ÌÊµÏÖ²ÎÊı´«µİµÄ²âÊÔ 
+    ç¼–ç¨‹å®ç°å‚æ•°ä¼ é€’çš„æµ‹è¯•
  */
 public class ArgumentTest {
-	
-	// ×Ô¶¨Òå³ÉÔ±·½·¨´òÓ¡²ÎÊı´«ÈëµÄÕûÊıÊı¾İ
+
+	// è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•æ‰“å°å‚æ•°ä¼ å…¥çš„æ•´æ•°æ•°æ®
 	// int ia = ib = 10;
 	void show1(int ia) {
 		ia = 200;
-		System.out.println("show·½·¨ÖĞ£ºia = " + ia); // 10  200
+		System.out.println("showæ–¹æ³•ä¸­ï¼šia = " + ia); // 10  200
 	}
-	// ×Ô¶¨Òå³ÉÔ±·½·¨´òÓ¡²ÎÊı´«ÈëµÄÊı×éÄÚÈİ
+	// è‡ªå®šä¹‰æˆå‘˜æ–¹æ³•æ‰“å°å‚æ•°ä¼ å…¥çš„æ•°ç»„å†…å®¹
 	void show2(int[] arr1) {
-		arr1 = new int[2];  // ¼ÓÉÏ¸ÄĞĞ´úÂëºó£¬Ïàµ±ÓÚÔÚ¶ÑÇøÖĞÓÖÖØĞÂÉêÇëÒ»¿éÄÚ´æ¿Õ¼ä
+		arr1 = new int[2];  // åŠ ä¸Šæ”¹è¡Œä»£ç åï¼Œç›¸å½“äºåœ¨å †åŒºä¸­åˆé‡æ–°ç”³è¯·ä¸€å—å†…å­˜ç©ºé—´
 		arr1[0] = 200;
-		System.out.println("show·½·¨ÖĞ£ºarr1[0] = " + arr1[0]); // 10  200  200
+		System.out.println("showæ–¹æ³•ä¸­ï¼šarr1[0] = " + arr1[0]); // 10  200  200
 	}
-	
+
 	public static void main(String[] args) {
-		
-		// 1.ÉùÃ÷ArgumentTestÀàĞÍµÄÒıÓÃÖ¸Ïò¸ÃÀàĞÍµÄ¶ÔÏó
+
+		// 1.å£°æ˜ArgumentTestç±»å‹çš„å¼•ç”¨æŒ‡å‘è¯¥ç±»å‹çš„å¯¹è±¡
 		ArgumentTest at = new ArgumentTest();
-		// 2.Ê¹ÓÃÒıÓÃ±äÁ¿µ÷ÓÃshow1·½·¨½øĞĞ²âÊÔ
+		// 2.ä½¿ç”¨å¼•ç”¨å˜é‡è°ƒç”¨show1æ–¹æ³•è¿›è¡Œæµ‹è¯•
 		int ib = 10;
 		at.show1(ib);
-		System.out.println("main·½·¨ÖĞ£ºib = " + ib); // ib = 10 
-		
+		System.out.println("mainæ–¹æ³•ä¸­ï¼šib = " + ib); // ib = 10
+
 		System.out.println("-------------------------------------------------");
-		// 3.µ÷ÓÃshow2·½·¨½øĞĞ²âÊÔ
+		// 3.è°ƒç”¨show2æ–¹æ³•è¿›è¡Œæµ‹è¯•
 		int[] arr2 = new int[]{10, 20};
 		at.show2(arr2);
-		System.out.println("main·½·¨ÖĞ£ºarr2[0] = " + arr2[0]); // 10 200 10
+		System.out.println("mainæ–¹æ³•ä¸­ï¼šarr2[0] = " + arr2[0]); // 10 200 10
 	}
 }

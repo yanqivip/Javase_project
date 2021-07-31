@@ -1,22 +1,23 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊµÏÖwhileÑ­»·µÄÊ¹ÓÃ
+    ç¼–ç¨‹å®ç°whileå¾ªç¯çš„ä½¿ç”¨
  */
 public class WhileTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.Ê¹ÓÃforÑ­»·´òÓ¡1 ~ 10Ö®¼äµÄËùÓĞÕûÊı
-		// ÔÚ()»ò{}ÖĞÉùÃ÷µÄ±äÁ¿½Ğ×ö¿é±äÁ¿£¬×÷ÓÃ·¶Î§ÊÇ´ÓÉùÃ÷¿ªÊ¼Ò»Ö±µ½Óï¾ä¿é½áÊø
-		for(int i = 1; i <= 10; i++) {
-			System.out.println("i = " + i);
-		}
-		
-		System.out.println("-----------------------------");
-		// 2.Ê¹ÓÃwhileÑ­»·´òÓ¡1 ~ 10Ö®¼äµÄËùÓĞÕûÊı
-		int i = 1;
-		while(i <= 10) {
-			System.out.println("i = " + i);
-			i++;
-		}
-	}
+
+    public static void main(String[] args) {
+
+        // 1.ä½¿ç”¨forå¾ªç¯æ‰“å°1 ~ 10ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        // åœ¨()æˆ–{}ä¸­å£°æ˜çš„å˜é‡å«åšå—å˜é‡ï¼Œä½œç”¨èŒƒå›´æ˜¯ä»å£°æ˜å¼€å§‹ä¸€ç›´åˆ°è¯­å¥å—ç»“æŸ
+        for(int i = 1; i <= 10; i++) {
+            System.out.println("i = " + i);
+        }
+
+        System.out.println("-----------------------------");
+        // 2.ä½¿ç”¨whileå¾ªç¯æ‰“å°1 ~ 10ä¹‹é—´çš„æ‰€æœ‰æ•´æ•°
+        int i = 1;
+        while(i <= 10) {
+            System.out.println("i = " + i);
+            i++;
+        }
+    }
 }

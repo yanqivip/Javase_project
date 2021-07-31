@@ -1,42 +1,43 @@
+package com.yanqi.task04;
 /*
-    ±à³ÌÊ¹ÓÃif else if else·ÖÖ§½á¹¹À´¼ÆËã¸öÈËËùµÃË°
+    ç¼–ç¨‹ä½¿ç”¨if else if elseåˆ†æ”¯ç»“æ„æ¥è®¡ç®—ä¸ªäººæ‰€å¾—ç¨
  */
 
-import java.util.Scanner; 
- 
+import java.util.Scanner;
+
 public class IfSalaryTest {
-	
-	public static void main(String[] args) {
-		
-		// 1.ÌáÊ¾ÓÃ»§ÊäÈë¸öÈËµÄĞ½Ë®²¢Ê¹ÓÃ±äÁ¿¼ÇÂ¼
-		System.out.println("ÇëÊäÈëÄúµÄĞ½Ë®£º");
-		Scanner sc = new Scanner(System.in);
-		// ¾Ö²¿±äÁ¿£º×÷ÓÃ·¶Î§ÊÇ´ÓÉùÃ÷¿ªÊ¼Ò»Ö±·½·¨Ìå½áÊø
-		int salary = sc.nextInt();
-		
-		// 2.Ê¹ÓÃif else if else·ÖÖ§½á¹¹ÅĞ¶ÏĞ½Ë®ËùÔÚµÄ·¶Î§²¢¼ÆËã¶ÔÓ¦µÄ¸öÈËËùµÃË°
-		// ¸öÈËËùµÃË°¹«Ê½£º ±¾ÔÂÓ¦ÄÉË°ËùµÃ¶î * ¶ÔÓ¦µÄË°ÂÊ - ËÙËã¿Û³ıÊı
-		double salaryPrice = 0.0;
-		if(salary <= 5000) {
-			System.out.println("ÎŞĞèÄÉË°£¡");
-		}
-		else if(salary <= 8000) {
-			// ¿é±äÁ¿£º×÷ÓÃ·¶Î§ÊÇ´ÓÉùÃ÷¿ªÊ¼Ò»Ö±µ½µ±Ç°Óï¾ä¿é½áÊø
-			//double salaryPrice = (salary - 5000) * 0.03;
-			//salaryPrice = (salary - 5000) * 0.03;
-			salaryPrice = (salary - 5000) * 0.03 - 0;
-		}
-		else if(salary <= 17000) {
-			//salaryPrice = (salary - 8000) * 0.1 + (8000 - 5000) * 0.03;
-			salaryPrice = (salary - 5000) * 0.1 - 210;
-		}
-		else if(salary <= 30000) {
-			//salaryPrice = (salary - 17000) * 0.2 + (17000 - 8000) * 0.1 + (8000 - 5000) * 0.03;
-			salaryPrice = (salary - 5000) * 0.2 - 1410;
-		}
-		// ...
-		
-		// 3.´òÓ¡×îÖÕµÄ¼ÆËã½á¹û
-		System.out.println("×îÖÕµÄ¸öÈËËùµÃË°ÊÇ£º" + salaryPrice);
-	}
+
+    public static void main(String[] args) {
+
+        // 1.æç¤ºç”¨æˆ·è¾“å…¥ä¸ªäººçš„è–ªæ°´å¹¶ä½¿ç”¨å˜é‡è®°å½•
+        System.out.println("è¯·è¾“å…¥æ‚¨çš„è–ªæ°´ï¼š");
+        Scanner sc = new Scanner(System.in);
+        // å±€éƒ¨å˜é‡ï¼šä½œç”¨èŒƒå›´æ˜¯ä»å£°æ˜å¼€å§‹ä¸€ç›´æ–¹æ³•ä½“ç»“æŸ
+        int salary = sc.nextInt();
+
+        // 2.ä½¿ç”¨if else if elseåˆ†æ”¯ç»“æ„åˆ¤æ–­è–ªæ°´æ‰€åœ¨çš„èŒƒå›´å¹¶è®¡ç®—å¯¹åº”çš„ä¸ªäººæ‰€å¾—ç¨
+        // ä¸ªäººæ‰€å¾—ç¨å…¬å¼ï¼š æœ¬æœˆåº”çº³ç¨æ‰€å¾—é¢ * å¯¹åº”çš„ç¨ç‡ - é€Ÿç®—æ‰£é™¤æ•°
+        double salaryPrice = 0.0;
+        if(salary <= 5000) {
+            System.out.println("æ— éœ€çº³ç¨ï¼");
+        }
+        else if(salary <= 8000) {
+            // å—å˜é‡ï¼šä½œç”¨èŒƒå›´æ˜¯ä»å£°æ˜å¼€å§‹ä¸€ç›´åˆ°å½“å‰è¯­å¥å—ç»“æŸ
+            //double salaryPrice = (salary - 5000) * 0.03;
+            //salaryPrice = (salary - 5000) * 0.03;
+            salaryPrice = (salary - 5000) * 0.03 - 0;
+        }
+        else if(salary <= 17000) {
+            //salaryPrice = (salary - 8000) * 0.1 + (8000 - 5000) * 0.03;
+            salaryPrice = (salary - 5000) * 0.1 - 210;
+        }
+        else if(salary <= 30000) {
+            //salaryPrice = (salary - 17000) * 0.2 + (17000 - 8000) * 0.1 + (8000 - 5000) * 0.03;
+            salaryPrice = (salary - 5000) * 0.2 - 1410;
+        }
+        // ...
+
+        // 3.æ‰“å°æœ€ç»ˆçš„è®¡ç®—ç»“æœ
+        System.out.println("æœ€ç»ˆçš„ä¸ªäººæ‰€å¾—ç¨æ˜¯ï¼š" + salaryPrice);
+    }
 }
