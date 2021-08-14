@@ -1,7 +1,7 @@
 package com.yanqi.task01;
 /*
  *  项目名称：第一个Java程序
- *  项目功能：打印一句话
+ *  项目功能：打印一句话  
  *  作    者：yanqi
  *  版    本: V1.0
  *  所 有 者：yanqi
