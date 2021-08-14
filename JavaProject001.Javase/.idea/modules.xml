@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Javase.javase_javase/Javase.javase_javase.iml" filepath="$PROJECT_DIR$/Javase.javase_javase/Javase.javase_javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Javase.javase_project/Javase.javase_project.iml" filepath="$PROJECT_DIR$/Javase.javase_project/Javase.javase_project.iml" />
+    </modules>
+  </component>
+</project>

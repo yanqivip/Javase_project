@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fd1be00-4619-4da8-9acf-bf52b7885419" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../NO.Z.00001.Javase\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wNw6vxh3GgP9b6e5qv7X92BTe7" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11 (2)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Javase.javase_project/src/com/yanqi" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\NO.Z.10000——javaproject\NO.Z.00001.Javase\Javase.javase_project\src\com\yanqi" />
+      <recent name="E:\NO.Z.10000——javaproject\NO.Z.00001.Javase\Javase.javase_project\src\com\yanqi\project04" />
+      <recent name="E:\NO.Z.10000——javaproject\NO.Z.00001.Javase\Javase.javase_project\src\com\yanqi\project03" />
+      <recent name="E:\NO.Z.10000——javaproject\NO.Z.00001.Javase\Javase.javase_project\src\com\yanqi\project01" />
+      <recent name="E:\NO.Z.10000——javaproject\NO.Z.00001.Javase\Javase.javase_project\src\com\yanqi\project02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Huatu">
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.yanqi.task01.HelloWorld" />
+      <module name="Javase.javase_javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.yanqi.task01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Huatu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yanqi.project01.demo02_tortoise.Huatu" />
+      <module name="Javase.javase_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yanqi.project01.demo02_tortoise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yanqi.project01.demo01_firstjava.MyTest" />
+      <module name="Javase.javase_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yanqi.project01.demo01_firstjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QQLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yanqi.project02.demo01_chat.QQLogin" />
+      <module name="Javase.javase_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yanqi.project02.demo01_chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yanqi.project04.demo04_Betterdata.TestJTable" />
+      <module name="Javase.javase_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yanqi.project04.demo04_Betterdata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Huatu" />
+        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.QQLogin" />
+        <item itemvalue="Application.TestJTable" />
+        <item itemvalue="Application.MyTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fd1be00-4619-4da8-9acf-bf52b7885419" name="Default Changelist" comment="" />
+      <created>1628312182983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628312182983</updated>
+      <workItem from="1628312184293" duration="130000" />
+      <workItem from="1628312344206" duration="110000" />
+      <workItem from="1628312469868" duration="95000" />
+      <workItem from="1628312707536" duration="4752000" />
+      <workItem from="1628594491674" duration="3345000" />
+      <workItem from="1628603830678" duration="397000" />
+      <workItem from="1628604245452" duration="6000" />
+      <workItem from="1628604259567" duration="18000" />
+      <workItem from="1628911595392" duration="67000" />
+      <workItem from="1628911855172" duration="108000" />
+      <workItem from="1628911980396" duration="1037000" />
+      <workItem from="1628913065467" duration="1178000" />
+      <workItem from="1628914500657" duration="1416000" />
+      <workItem from="1628920821513" duration="56000" />
+      <workItem from="1628921085718" duration="624000" />
+      <workItem from="1628922448179" duration="256000" />
+      <workItem from="1628922862278" duration="2605000" />
+      <workItem from="1628925595234" duration="392000" />
+      <workItem from="1628926721161" duration="5770000" />
+      <workItem from="1628937041231" duration="1640000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="310" y="42" key="#Project_Structure" timestamp="1628312261028">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="310" y="42" key="#Project_Structure/71.0.1295.768@71.0.1295.768" timestamp="1628312261028" />
+    <state x="172" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628921455713">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="172" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.0.1295.768@71.0.1295.768" timestamp="1628921455713" />
+    <state x="456" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628927609395">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="456" y="173" key="#com.intellij.fileTypes.FileTypeChooser/71.0.1295.768@71.0.1295.768" timestamp="1628927609395" />
+    <state x="523" y="87" key="#com.intellij.ide.util.MemberChooser" timestamp="1628924616157">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="523" y="87" key="#com.intellij.ide.util.MemberChooser/71.0.1295.768@71.0.1295.768" timestamp="1628924616157" />
+    <state x="556" y="273" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1628911907421">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="556" y="273" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/71.0.1295.768@71.0.1295.768" timestamp="1628911907421" />
+    <state x="448" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628313305478">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="448" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/71.0.1295.768@71.0.1295.768" timestamp="1628313305478" />
+    <state x="520" y="139" key="FileChooserDialogImpl" timestamp="1628921611545">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="520" y="139" key="FileChooserDialogImpl/71.0.1295.768@71.0.1295.768" timestamp="1628921611545" />
+    <state width="1234" height="174" key="GridCell.Tab.0.bottom" timestamp="1628938686575">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state width="1234" height="174" key="GridCell.Tab.0.bottom/71.0.1295.768@71.0.1295.768" timestamp="1628938686575" />
+    <state width="1234" height="174" key="GridCell.Tab.0.center" timestamp="1628938686575">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state width="1234" height="174" key="GridCell.Tab.0.center/71.0.1295.768@71.0.1295.768" timestamp="1628938686575" />
+    <state width="1234" height="174" key="GridCell.Tab.0.left" timestamp="1628938686575">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state width="1234" height="174" key="GridCell.Tab.0.left/71.0.1295.768@71.0.1295.768" timestamp="1628938686575" />
+    <state width="1234" height="174" key="GridCell.Tab.0.right" timestamp="1628938686575">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state width="1234" height="174" key="GridCell.Tab.0.right/71.0.1295.768@71.0.1295.768" timestamp="1628938686575" />
+    <state x="219" y="0" key="SettingsEditor" timestamp="1628937301958">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="219" y="0" key="SettingsEditor/71.0.1295.768@71.0.1295.768" timestamp="1628937301958" />
+    <state x="399" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1628937100815">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="399" y="208" key="com.intellij.ide.util.TipDialog/71.0.1295.768@71.0.1295.768" timestamp="1628937100815" />
+    <state x="115" y="0" key="new project wizard" timestamp="1628921489762">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="115" y="0" key="new project wizard/71.0.1295.768@71.0.1295.768" timestamp="1628921489762" />
+    <state x="407" y="175" key="run.anything.popup" timestamp="1628928173002">
+      <screen x="71" y="0" width="1295" height="768" />
+    </state>
+    <state x="407" y="175" key="run.anything.popup/71.0.1295.768@71.0.1295.768" timestamp="1628928173002" />
+  </component>
+</project>

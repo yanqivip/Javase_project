@@ -1,0 +1,82 @@
+/*
+
+├─project01
+│  ├─demo01_firstjava						—————>	开始Java程序
+│  ├─demo02_tortoise						—————>	画王八
+│  ├─demo03_starts							—————>	满天星星
+│  ├─demo04_ball							—————>	飞行的小球
+│  ├─demo05_ball							—————>	小球撞墙
+│  ├─demo06_snow							—————>	下大雪
+│  ├─demo07_ball							—————>	键盘控制小球
+│  ├─demo08_char							—————>	打字母的游戏
+│  ├─demo09_ball							—————>	鼠标控制小球
+│  └─demo10_conclusion						—————>	第一阶段总结
+└─project01
+
+*/
+
+/*
+
+├─project02
+│  ├─demo01_chat							—————>	聊天界面
+│  ├─demo02_input							—————>	响应用户输入
+│  ├─demo03_IOstream						—————>	IO流
+│  │  ├─code01_copy							—————>	复制大文件
+│  │  ├─code02_character					—————>	字符流
+│  │  ├─code03_record						—————>	实现聊天记录
+│  │  ├─code04_Encryption					—————>	文件加密解密
+│  │  ├─code05_copy							—————>	文件复制
+│  │  └─code06_read							—————>	读文件
+│  ├─demo04_caction							—————>	建立网络通讯
+│  │  ├─code01_validation					—————>	到服务器验证用户名和密码
+│  │  ├─code02_message						—————>	在网络上传个消息
+│  │  └─code03_send							—————>	将聊天信息发送到服务器
+│  ├─demo05_database						—————>	数据库访问
+│  │  ├─code01_project						—————>	将代码融入项目中
+│  │  ├─code02_Javaaccess					—————>	用java访问数据库
+│  │  ├─code03_validation					—————>	用户身份验证
+│  │  └─code04_simulation					—————>	用文件模拟数据库
+│  └─demo06_Manyusers						—————>	应对多用户访问
+└─project02
+
+*/
+
+├─project03
+│  ├─demo01_Arraynotepad					—————>	用数组实现的记事本
+│  ├─demo02_Linkednotepad					—————>	使用链表的记事本
+│  ├─demo03_Systemlibraries					—————>	让java系统库帮助你
+│  ├─demo05_ArrayListLinkedList				—————>	深入学习ArrayList和LinkedList
+│  ├─demo06_Setcollection					—————>	Set集合
+│  │  ├─code01_Nonclassicalsort				—————>	使用HashSet
+│  │  ├─code02_Bubble						—————>	依赖算法
+│  │  ├─code03_UseHashSet					—————>	冒泡排序
+│  │  ├─code04_Selectionsort				—————>	选择排序
+│  │  └─code05_Dependalgorithm				—————>	非经典的排序
+│  ├─demo07_Binarytree						—————>	试试二分查找，理解二叉树
+│  ├─demo08_Copydirectory					—————>	复制一个目录的内容
+│  ├─demo10_UserSocket						—————>	保存用户的Socket
+│  ├─demo11_synchronous						—————>	同步用户名
+│  └─demo12_Manyusers						—————>	多用户转发逻辑
+└─project03
+
+/*
+
+├─project04
+│     ├─demo02_Database					    —————>	做一个数据库的管理工具
+│     ├─demo03_JTable					    —————>	驾驭JTable
+│     ├─demo04_Betterdata				    —————>	有更好的方法驾驭JTable
+│     ├─demo05_JTable					    —————>	用面向对象的办法驾驭JTable
+│     └─demo06_Resource					    —————>	完成资源管理器
+└─project04
+
+*/
+
+
+
+
+
+
+
+
+
+
